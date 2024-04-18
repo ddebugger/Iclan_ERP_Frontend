@@ -142,7 +142,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 2rem 3rem;
+  margin: 1.5rem 2rem;
 }
 
 #sidebar-active {
@@ -198,4 +198,15 @@
   .open-sidebar {
     display: block;
   }
+}
+
+@media (max-width: 700px) {
+
+  .acount-info,
+  .vet-divider,
+  .notification-icon {
+    display: none;
+  }
+
+
 }
