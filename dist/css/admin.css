@@ -29,6 +29,10 @@
   --thinkerYellow: #F1AC21;
   --thinkYellow: #FBBC28;
   --dividerGrayColor: #E0E0E0;
+  --iconThumbnailBlueColor: #E9EDFF;
+  --iconThumbnailRedColor: #FFEFE0;
+  --iconThumbnailOrangeColor: #FFF6D8;
+  --iconRedColor: #FF7373;
 }
 
 .wrapper {
@@ -55,6 +59,7 @@
 
 .menu {
   margin-top: 1rem;
+  list-style-type: none;
 }
 
 .menu li {
@@ -142,7 +147,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 1.5rem 2rem;
+  margin: 1.5rem 2rem 0.5rem 2rem;
 }
 
 #sidebar-active {
@@ -207,6 +212,189 @@
   .notification-icon {
     display: none;
   }
-
-
 }
+
+/* End of header */
+
+/* title section */
+.title-section {
+  margin: 0 2rem;
+  padding: 0.5rem 0;
+}
+
+.title {
+  color: var(--textDarkBlueColor);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* End of title section */
+
+/******** Main content section  *******/
+.main-section-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 2rem;
+}
+
+.main-section {
+  width: 76%;
+  height: 100vh;
+}
+
+.counters {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 0.5rem;
+  overflow-x: scroll;
+}
+
+.counters:last-child() {
+  margin-right: 0px;
+}
+
+.counter-item {
+  background-color: var(--whiteColor);
+  padding: 1.5rem 1.5rem;
+  border-radius: 15px;
+  width: 190px;
+  min-width: 190px;
+}
+
+.counter-main-content {
+  display: flex;
+}
+
+.main-counter-text {
+  font-size: 20px;
+  color: var(--textBlueColor);
+  font-weight: bold;
+}
+
+.sub-counter-text {
+  font-size: 10px;
+  color: var(--textLighterGrayColor);
+}
+
+.counter-icon {
+  width: 38px;
+  height: 38px;
+  background-color: var(--textBlueColor);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter-texts {
+  margin-left: 0.5rem;
+}
+
+.counter-progress-bar {
+  display: flex;
+  margin-top: 15px;
+}
+
+.back-progress-bar {
+  width: 100%;
+  height: 4px;
+  background-color: var(--dividerGrayColor);
+  border-radius: 10px;
+}
+
+.progress-bar {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.front-progress-bar {
+  width: 70%;
+  height: 4px;
+  background-color: var(--textDarkBlueColor);
+  border-radius: 10px;
+  position: absolute;
+  top: 50;
+  left: 0;
+}
+
+.percentage {
+  color: var(--textDarkBlueColor);
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/******** main aside section *******/
+.main-section-aside {
+  background-color: var(--whiteColor);
+  width: 22%;
+  height: 100vh;
+  border-radius: 10px;
+  min-width: 220px;
+}
+
+.main-section-aside-title {
+  color: var(--textBlueColor);
+  margin: 1rem;
+  font-weight: 500;
+}
+
+.task-item {
+  display: flex;
+  margin: 1.5rem 1rem;
+  align-items: center;
+}
+
+.task-item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 12px;
+  border-radius: 8px;
+}
+
+.task-item-texts {
+  margin-left: 0.8rem;
+}
+
+.task-item-text-title {
+  font-size: 14px;
+  color: var(--textBlueColor);
+}
+
+.task-item-text-time {
+  font-size: 12px;
+  color: var(--textLighterGrayColor);
+  margin-top: 2px;
+}
+
+.ML-color {
+  background-color: var(--iconThumbnailBlueColor);
+}
+
+.ML-color svg,
+.DS-color Svg,
+.TDT-color {
+  color: var(--thinkerYellow);
+}
+
+.DS-color {
+  background-color: var(--iconThumbnailRedColor);
+}
+
+.TDT-color {
+  background-color: var(--iconThumbnailOrangeColor);
+}
+
+.T2P-color {
+  background-color: var(--iconThumbnailRedColor);
+}
+
+.T2P-color svg {
+  color: var(--iconRedColor);
+}
+
+/******** End of main aside section *******/
