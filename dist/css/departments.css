@@ -1,0 +1,256 @@
+/* The Department styles here */
+
+:root {
+    --mainBlue: #004F71;
+    --mainYellow: #FFCD05;
+    --white: #FFFFFF;
+    --borderGray: #9D9D9D;
+    --backgroundColor: #F5F5F5;
+    --lightDark: #404040;
+    --textGray: #8F9BB3;
+    --textBlue: #222B45;
+    --completedStatusText: #00B69B;
+    --completedStatusBG: #00b69b31;
+    --progressingStatusText: #6226EF;
+    --progressingStatusBG: #6226ef34;
+    --rejectedStatusText: #EF3826;
+    --rejectedStatusBG: #ef372622;
+}
+
+.main-content {
+    width: 100%;
+    padding: .8rem 2.8rem;
+    background-color: var(--backgroundColor);
+}
+
+.top{
+    margin-bottom: 2.5rem;
+}
+
+.title {
+    color: var(--mainBlue);
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/******* Search and filter section ********/
+
+.filter-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-options {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    margin-right: 0.5rem;
+}
+
+.search-bar {
+    height: 2.5rem;
+    background-color: var(--white);
+    border-radius: 12px;
+    display: flex;
+        gap: 10px;
+    align-items: center;
+    padding: 0 1rem;
+    flex: 1;
+    margin-right: 1.5rem;
+}
+
+.search-bar i {
+    color: var(--lightDark);
+    font-size: 12px;
+    margin-right: 1rem;
+}
+
+.search-bar input {
+    border: none;
+    flex: 1;
+    height: inherit;
+}
+
+.search-bar input::placeholder {
+    color: var(--lightDark);
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.add-btn {
+    background-color: var(--mainYellow);
+    border: none;
+    padding: 9px 8px;
+    color: var(--mainBlue) !important;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+.plus{
+    font-size: 20px;
+}
+
+.filter-options {
+    display: flex;
+}
+
+.filter-options i {
+    color: var(--lightDark);
+}
+
+.dropdown {
+    border: none;
+    background-color: transparent;
+    color: var(--lightDark);
+    margin-right: 0.8rem;
+}
+
+.dropdown:focus {
+    outline: none;
+}
+
+@media (max-width: 1010px) {
+    .search-bar {
+        width: 50%;
+    }
+}
+
+@media (max-width: 650px) {
+    .main-content{
+        padding: 1rem;
+    }
+    .filter-section {
+        display: block;
+    }
+
+    .search-options {
+        width: 100%;
+    }
+
+    .filter-options {
+        margin-top: 1.5rem;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}
+
+/******* End of search and filter section ********/
+
+
+/* Table section */
+
+.tables-section {
+    margin: 15px 2rem 0 .2rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: inherit !important;
+}
+
+.table-section {
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+
+th,
+td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}
+
+td {
+    height: 70px;
+}
+
+thead tr th:first-child {
+    border-top-left-radius: 10px;
+}
+
+thead tr th:last-child {
+    border-top-right-radius: 10px;
+}
+
+th {
+    background-color:
+        #f2f2f2;
+}
+
+.status{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 13px;
+    border-radius: 5px;
+}
+
+.completed-status {
+    background-color: var(--completedStatusBG);
+    color: var(--completedStatusText);
+}
+
+.progressing-status {
+    background-color: var(--progressingStatusBG);
+    color: var(--progressingStatusText);
+}
+
+.rejected-status {
+    background-color: var(--rejectedStatusBG);
+    color: var(--rejectedStatusText);
+}
+
+
+.table-icon {
+    margin: 0 15px 0 0;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+    padding: 0 1rem;
+}
+
+.pagination-counter {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: space-between;
+    padding-right: 1rem;
+}
+
+.header-buttons{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+
+.pagination button{
+    border: none;
+    color: var(--textGray);
+}
+
+.header-buttons:hover,
+.filter-icon-button:hover,
+.pagination button {
+    cursor: pointer;
+}
+
+@media (max-width: 550px) {
+    .pagination .header-buttons p {
+        display: none;
+    }
+
+    .pagination-counter {
+        width: 80%;
+    }
+}
