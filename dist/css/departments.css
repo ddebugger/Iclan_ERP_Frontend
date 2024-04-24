@@ -24,13 +24,13 @@
 }
 
 .top{
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .title {
     color: var(--mainBlue);
     font-weight: bold;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 /******* Search and filter section ********/
@@ -144,10 +144,12 @@
 /* Table section */
 
 .tables-section {
-    margin: 15px 2rem 0 .2rem;
+    margin: 9px 2rem 0 .2rem;
     border: 1px solid #ddd;
     border-radius: 10px;
     width: inherit !important;
+    background-color: var(--white);
+    padding: 1rem;
 }
 
 .table-section {
@@ -178,10 +180,6 @@ thead tr th:last-child {
     border-top-right-radius: 10px;
 }
 
-th {
-    background-color:
-        #f2f2f2;
-}
 
 .status{
     width: fit-content;
@@ -236,6 +234,7 @@ th {
 
 .pagination button{
     border: none;
+    background-color: transparent;
     color: var(--textGray);
 }
 
