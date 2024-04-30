@@ -1,0 +1,459 @@
+/* Google Font Link */
+@font-face {
+  font-family: 'DMSans';
+  src: url('../../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf') format('ttf-variations');
+  src: url('../../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf') format('truetype');
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DMSans';
+}
+
+:root {
+  --textBlackColor: #060606;
+  --textLightGrayColor: #757575;
+  --textDarkBlueColor: #004F71;
+  --whiteColor: #FFFFFF;
+  --blackColor: #000000;
+  --redColor: #FF0000;
+  --textSidebarColor: #5A5A5A;
+  --backgroundColor: #E3E0D9;
+  --yellowColor: #FFCD05;
+  --textBlueColor: #102844;
+  --textLighterGrayColor: #767278;
+  --thinkerYellow: #F1AC21;
+  --thinkYellow: #FBBC28;
+  --dividerGrayColor: #E0E0E0;
+  --iconThumbnailBlueColor: #E9EDFF;
+  --iconThumbnailRedColor: #FFEFE0;
+  --iconThumbnailOrangeColor: #FFF6D8;
+  --iconRedColor: #FF7373;
+  --lightPink: #E89271;
+  --lightPuple: #D398E7;
+  --lightBlue: #70A1E5;
+  --lightYellow: #F0C274;
+  --cardTitleGray: #797979;
+  --cardBackgroundColor: rgba(255, 255, 255, 0.51);
+  --statusGreenColor: #1A932E;
+  --statusYellowColor: #DFA510;
+  --statusRedColor: #;
+  --statusOrangeColor: #E65F2B;
+}
+
+select {
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("../../assets/icons/down-arrow.svg");
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 8px) center;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--whiteColor);
+  outline: 0;
+}
+
+select:focus {
+  outline: none;
+}
+
+/* Navigation sidebar */
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 78px;
+  background: var(--whiteColor);
+  padding: 6px 14px 6px 0;
+  z-index: 1000;
+  transition: all 0.5s ease;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar.open {
+  width: 250px;
+}
+
+.sidebar .logo-details {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.sidebar .logo-details .icon {
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.sidebar .logo-details .logo_name {
+  color: var(--blackColor);
+  font-size: 18px;
+  font-weight: 800;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.sidebar .logo-details .logo_name .logo_name_part {
+  font-weight: 200;
+}
+
+.sidebar.open .logo-details .icon,
+.sidebar.open .logo-details .logo_name {
+  opacity: 1;
+}
+
+.sidebar .logo-details #btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: all 0.4s ease;
+  font-size: 23px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.sidebar.open .logo-details #btn {
+  text-align: right;
+}
+
+.nav-list {
+  margin-top: 20px;
+  height: 100%;
+  padding-right: 14px;
+}
+
+.sidebar i,
+.sidebar svg {
+  color: var(--textSidebarColor);
+  min-width: 50px;
+  font-size: 28px;
+  text-align: center;
+  line-height: 60px;
+}
+
+.sidebar li {
+  position: relative;
+  margin: 8px 0;
+  list-style: none;
+}
+
+.sidebar li a {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.menu-item {
+  border-radius: 12px;
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+  width: 100%;
+  margin-left: 14px;
+  transition: all 0.4s ease;
+}
+
+.active-menu,
+.active-menu svg {
+  background-color: var(--thinkerYellow);
+  color: var(--whiteColor) !important;
+  font-weight: bold !important;
+}
+
+.sidebar .menu-item-indicator {
+  position: absolute;
+  left: 0;
+  height: inherit;
+  width: 4px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.sidebar li a:hover .menu-item-indicator {
+  background: var(--thinkerYellow);
+}
+
+.sidebar li a:hover .menu-item {
+  background-color: var(--thinkerYellow);
+}
+
+.sidebar li a .links_name {
+  color: var(--textSidebarColor);
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+}
+
+.sidebar.open li a .links_name {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sidebar li a:hover .links_name,
+.sidebar li a:hover svg {
+  transition: all 0.5s ease;
+  color: var(--whiteColor);
+}
+
+.divider {
+  width: 100%;
+  height: 0.01rem;
+  margin-top: 2rem;
+  margin-bottom: 1.2rem;
+  background-color: var(--dividerGrayColor);
+}
+
+/* End of navigation sidebar */
+
+/* Home section */
+.home-section {
+  position: relative;
+  background: var(--backgroundColor);
+  min-height: 100vh;
+  top: 0;
+  left: 78px;
+  width: calc(100% - 78px);
+  transition: all 0.5s ease;
+  padding: 1rem 2rem;
+
+}
+
+.sidebar.open~.home-section {
+  left: 250px;
+  width: calc(100% - 250px);
+}
+
+.home-section .text {
+  display: inline-block;
+  color: #11101d;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 18px;
+}
+
+@media (max-width: 560px) {
+  .sidebar.open~.home-section {
+    left: 78px;
+    width: calc(100% - 78px);
+  }
+}
+
+/* Overview section */
+.overview-section {
+  margin: 2rem 0rem 1.5rem 0rem;
+}
+
+.overview-title {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.overview-title p {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--textBlackColor);
+}
+
+.overview-dropdown {
+  padding: 0 2rem 0 0.8rem;
+}
+
+.overview-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.overview-card {
+  background-color: var(--cardBackgroundColor);
+  padding: 1.2rem;
+  border-radius: 14px;
+  min-width: 220px;
+  flex-grow: 1;
+}
+
+.card-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.p-color {
+  background-color: var(--lightPink);
+}
+
+.t-color {
+  background-color: var(--lightPuple);
+}
+
+.ts-color {
+  background-color: var(--lightBlue);
+}
+
+.r-color {
+  background-color: var(--lightYellow);
+}
+
+.overview-card-title {
+  font-weight: 14px;
+  color: var(--cardTitleGray);
+  margin-top: 0.8rem;
+}
+
+.overview-card-counter {
+  font-size: 28px;
+  margin-top: 3px;
+  color: var(--textBlackColor);
+}
+
+.overview-card-counter span {
+  font-size: 16px;
+  margin-left: 4px;
+}
+
+.overview-card-footer {
+  display: flex;
+  margin-top: 4px;
+}
+
+.overview-card-footer p {
+  font-size: 10px;
+  margin-left: 2px;
+  color: var(--textBlackColor);
+}
+
+@media (max-width: 420px) {
+  .overview-section {
+    margin: 0 1rem;
+  }
+}
+
+/* End of overview section */
+
+/* Project summary section */
+.project-summary-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.project-summary {
+  background-color: var(--cardBackgroundColor);
+  flex-grow: 1;
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.project-summary-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-summary-header p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--textBlackColor);
+}
+
+.project-summary-dropdowns {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.project-dropdown {
+  padding: 0.5rem 1rem;
+}
+
+.project-manager-dropdown {
+  padding: 0.5rem 1.8rem 0.5rem 0.8rem;
+}
+
+.status-dropdown {
+  padding: 0.5rem 0 0.5rem 0.8rem;
+}
+
+.project-summary table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+  margin-top: 15px;
+  color: var(--textBlackColor);
+  font-size: 14px;
+}
+
+.project-summary table thead th {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+  padding-bottom: 8px;
+}
+
+.project-summary table tbody td {
+  padding-top: 20px;
+}
+
+.status {
+  border-radius: 50px;
+  padding: 5px 10px;
+  width: fit-content;
+  font-size: 12px;
+}
+
+.completed {
+  background-color: #1A932E18;
+  color: var(--statusGreenColor);
+}
+
+.delayed {
+  background-color: #DFA51018;
+  color: var(--statusYellowColor);
+}
+
+.at-risk {
+  background-color: #EE201C18;
+  color: var(--statusOrangeColor);
+}
+
+.ongoing {
+  background-color: #E65F2B18;
+  color: var(--statusOrangeColor);
+}
+
+.overall-progress {
+  background-color: var(--cardBackgroundColor);
+  border-radius: 14px;
+  flex-grow: 2;
+  padding: 1rem;
+}
+
+.all-dropdown {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+/* speedometer */
