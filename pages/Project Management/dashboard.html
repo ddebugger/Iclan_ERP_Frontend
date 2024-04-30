@@ -7,6 +7,7 @@
   <title>Project Management | Dashboard</title>
 
   <link rel="stylesheet" href="../../dist/css/dashboard.css">
+  <link rel="stylesheet" href="../../dist/css/select-module.css">
   <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
 </head>
 
@@ -187,37 +188,51 @@
   </div>
 
   <section class="home-section">
-    <!-- header section -->
-    <div class="header">
+    <!-- Navigation ------------------------- -->
+    <nav class="navbar">
+      <!-- Left Navbar Section -->
+      <div class="navbar-left">
+        <b class="admin-name">Hello, Lekan</b> <br>
+        <span class="greetings">Have a nice day</span>
+      </div>
 
-      <!-- right header section -->
-      <div class="header-right">
-        <p class="user-name">Hello, Lekan</p>
-        <p class="greetings">Have a nice day</p>
-      </div>
-      <!-- left header section -->
-      <div class="header-left">
-        <svg class="notification-icon" width="25" height="25" viewBox="0 0 25 25" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M21.0193 7.47548C21.0213 9.40548 19.4529 10.9771 17.5229 10.9791C15.5929 10.9811 14.0213 9.41274 14.0193 7.48274C14.0173 5.55274 15.5857 3.98111 17.5157 3.97911C19.4457 3.97711 21.0173 5.54548 21.0193 7.47548ZM19.0248 12.7676C18.5249 12.8981 18.025 12.9786 17.525 12.9791C16.0671 12.978 14.6691 12.3991 13.6372 11.3693C12.6052 10.3395 12.0235 8.94269 12.0193 7.48481C12.0178 6.01481 12.5964 4.68421 13.5154 3.69326C13.3337 3.47099 13.1047 3.29206 12.845 3.1695C12.5854 3.04694 12.3017 2.98385 12.0146 2.98482C10.9146 2.98596 10.0156 3.88689 10.0167 4.98689L10.017 5.27689C7.04793 6.15997 5.02076 8.89207 5.02398 11.9921L5.0302 17.9921L3.03227 19.9941L3.03331 20.9941L21.0333 20.9755L21.0323 19.9755L19.0302 17.9776L19.0248 12.7676ZM12.0364 23.9848C13.1464 23.9837 14.0355 23.0927 14.0343 21.9827L10.0343 21.9869C10.0349 22.5173 10.2461 23.0258 10.6216 23.4005C10.9971 23.7752 11.506 23.9854 12.0364 23.9848Z"
-            fill="#0A0A0A" />
-          <circle cx="17.5193" cy="7.47879" r="3.5" transform="rotate(-0.0593957 17.5193 7.47879)" fill="#FFCD05" />
-        </svg>
-        <div class="vet-divider"></div>
-        <img src="../../assets/images/image 1584.png" alt="Profile-Picture">
-        <div class="acount-info">
-          <p class="user-name">Lekan Okeowo</p>
-          <p class="role">Admin</p>
+      <!-- Right Navbar Section -->
+      <div class="navbar-right">
+        <!-- Notification -->
+        <div class="notification-cover">
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M21.0193 7.47548C21.0213 9.40548 19.4529 10.9771 17.5229 10.9791C15.5929 10.9811 14.0213 9.41274 14.0193 7.48274C14.0173 5.55274 15.5857 3.98111 17.5157 3.97911C19.4457 3.97711 21.0173 5.54548 21.0193 7.47548ZM19.0248 12.7676C18.5249 12.8981 18.025 12.9786 17.525 12.9791C16.0671 12.978 14.6691 12.3991 13.6372 11.3693C12.6052 10.3395 12.0235 8.94269 12.0193 7.48481C12.0178 6.01481 12.5964 4.68421 13.5154 3.69326C13.3337 3.47099 13.1047 3.29206 12.845 3.1695C12.5854 3.04694 12.3017 2.98385 12.0146 2.98482C10.9146 2.98596 10.0156 3.88689 10.0167 4.98689L10.017 5.27689C7.04793 6.15997 5.02076 8.89207 5.02398 11.9921L5.0302 17.9921L3.03227 19.9941L3.03331 20.9941L21.0333 20.9755L21.0323 19.9755L19.0302 17.9776L19.0248 12.7676ZM12.0364 23.9848C13.1464 23.9837 14.0355 23.0927 14.0343 21.9827L10.0343 21.9869C10.0349 22.5173 10.2461 23.0258 10.6216 23.4005C10.9971 23.7752 11.506 23.9854 12.0364 23.9848Z"
+              fill="#0A0A0A" />
+            <circle cx="17.5193" cy="7.47879" r="3.5" transform="rotate(-0.0593957 17.5193 7.47879)" fill="#FFCD05" />
+          </svg>
         </div>
-        <svg width="24" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M10.1164 6.74702C10.2069 6.66961 10.3318 6.64637 10.4441 6.68604C10.5564 6.72572 10.639 6.82229 10.6608 6.93938C10.6825 7.05646 10.6402 7.17627 10.5497 7.25368L8.21636 9.25368C8.09162 9.36038 7.90777 9.36038 7.78303 9.25368L5.4497 7.25368C5.30979 7.13402 5.29337 6.92359 5.41303 6.78368C5.53269 6.64377 5.74312 6.62735 5.88303 6.74702L7.9997 8.56102L10.1164 6.74768V6.74702Z"
-            fill="#404040" stroke="black" />
-        </svg>
+
+        <!-- Admin profile section -->
+        <div class="admin-profile">
+          <img src="../../assets/images/image 1584.png" alt="admin-image">
+          <div class="admin-status">
+            <div class="admin-content">
+              <b>Lekan Okeowo</b> <br>
+              <span>Admin</span>
+            </div>
+
+            <!-- NavBar Dropdown Group ------------------- -->
+            <div class="dropdown-group">
+              <img src="../../assets/icons/arrow-down.svg" alt="arrow-down">
+              <!-- Navbar dropdown Menu -->
+              <ul class="dropdown-menu">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#" class="navbar-logout">Log Out</a></li>
+                <!-- <li><a href="#">Menu Item 3</a></li> -->
+              </ul>
+            </div>
+            <!-- End of navbar drop down group -->
+          </div>
+        </div>
       </div>
-    </div>
-    <!-- End of header section -->
+    </nav>
+    <!-- End of Navigation------------------------------ ------------>
 
     <!-- Overview section -->
     <div class="overview-section">
