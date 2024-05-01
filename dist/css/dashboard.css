@@ -41,8 +41,9 @@
   --cardBackgroundColor: rgba(255, 255, 255, 0.51);
   --statusGreenColor: #1A932E;
   --statusYellowColor: #DFA510;
-  --statusRedColor: #;
+  --statusRedColor: #EE201C;
   --statusOrangeColor: #E65F2B;
+  --goldishYellowColor: #EFA510;
 }
 
 select {
@@ -263,7 +264,7 @@ select:focus {
 
 /* Overview section */
 .overview-section {
-  margin: 2rem 0rem 1.5rem 0rem;
+  margin: 2rem 0rem 1.8rem 0rem;
 }
 
 .overview-title {
@@ -370,9 +371,17 @@ select:focus {
   flex-grow: 1;
   border-radius: 14px;
   padding: 1rem;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  /* ______________ THE SCROLL NEEDS TO BE WORKED ON ____________________ */
 }
 
-.project-summary-header {
+.project-summary::-webkit-scrollbar {
+  display: none;
+}
+
+.dashboard-card-header {
   display: flex;
   justify-content: space-between;
 }
@@ -381,6 +390,7 @@ select:focus {
   font-size: 16px;
   font-weight: 500;
   color: var(--textBlackColor);
+  margin-right: 15px;
 }
 
 .project-summary-dropdowns {
@@ -457,3 +467,176 @@ select:focus {
 }
 
 /* speedometer */
+/* _____________________ */
+/* I still need to add */
+/* code for the speedomoter here */
+
+/* ______________________ */
+
+
+/* End of project summary section */
+
+
+/* Task section */
+.task-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 1.8rem 0;
+}
+
+.today-task {
+  height: inherit;
+  background-color: var(--cardBackgroundColor);
+  flex-grow: 1;
+  border-radius: 14px;
+  padding: 1rem;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  /* ______________ THE SCROLL NEEDS TO BE WORKED ON ____________________ */
+}
+
+.today-task::-webkit-scrollbar {
+  display: none;
+}
+
+.today-task-header {
+  list-style-type: none;
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+  margin: 8px 0;
+}
+
+.today-task-header li {
+  margin-right: 2.1rem;
+  padding: 10px 8px;
+  cursor: pointer;
+}
+
+.today-task-header .active {
+  border-bottom: 2px solid #2B5CE6;
+}
+
+.today-task-header li p {
+  text-decoration: none;
+  color: var(--textBlackColor);
+  font-size: 14px;
+}
+
+.today-task-header li p span {
+  background-color: #2B5CE610;
+  color: #2B5CE6;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 10px;
+  margin-left: 4px;
+}
+
+.tabcontent {
+  display: none;
+}
+
+.tabcontent {
+  animation: fadeEffect 1s;
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.8rem;
+}
+
+.task-description {
+  display: flex;
+  align-items: center;
+}
+
+.task-description input[type='checkbox'] {
+  width: 15px;
+  height: 15px;
+  accent-color: var(--goldishYellowColor);
+}
+
+.task-description p {
+  font-size: 14px;
+  color: var(--textBlackColor);
+  margin-left: 15px;
+}
+
+.task-status {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-workload {
+  height: inherit;
+  background-color: var(--cardBackgroundColor);
+  flex-grow: 1;
+  border-radius: 14px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.workload-dropdown {
+  padding: 0.5rem 1.8rem 0.5rem 1rem;
+}
+
+.workload-wrapper {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.workload-indicators {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.workload-indicator {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--textBlackColor);
+}
+
+.workload-indicators p {
+  font-size: 12px;
+  color: var(--cardTitleGray);
+  margin-top: 5px;
+}
+
+.workload-counter {
+  background-color: var(--textBlackColor);
+}
+
+.high-count {
+  background-color: var(--goldishYellowColor);
+  border-color: var(--goldishYellowColor);
+}
+
+.high-count p {
+  color: var(--textBlackColor) !important;
+}
+
+.workload-counter p {
+  font-size: 14px;
+  color: var(--whiteColor);
+  text-align: center;
+}
