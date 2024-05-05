@@ -8,6 +8,7 @@
 
   <link rel="stylesheet" href="../../dist/css/dashboard.css">
   <link rel="stylesheet" href="../../dist/css/select-module.css">
+  <link rel="stylesheet" href="../../dist/css/projects.css">
   <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
 </head>
 
@@ -237,6 +238,1088 @@
       </div>
     </nav>
     <!-- End of Navigation------------------------------ ------------>
+
+
+    <!-- This is the main section -->
+    <section class="project-section-wrapper">
+      <!-- projects section -->
+      <div class="project-section">
+
+        <!-- Project header -->
+        <div class="project-section-header">
+          <div class="project-section-header-left">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M6.43314 0.600525C7.16619 0.601296 7.86455 0.951249 8.30238 1.5363L9.0046 2.47054C9.22736 2.76653 9.58117 2.94305 9.95117 2.94382H12.1318C15.1087 2.94382 16.4954 4.46928 16.4954 7.7445L16.4739 11.5732C16.4731 14.6318 14.5722 16.5326 11.5121 16.5326H5.51355C2.44722 16.5326 0.541748 14.631 0.541748 11.5709V5.55922C0.541748 2.26858 2.00554 0.600525 4.89149 0.600525H6.43314ZM6.43237 1.75676H4.89149C2.65303 1.75676 1.69798 2.89449 1.69798 5.55922V11.5709C1.69798 14.0252 3.05308 15.3764 5.51355 15.3764H11.5121C13.9664 15.3764 15.3176 14.0252 15.3176 11.5709V11.5685L15.3392 7.74142C15.3392 5.12139 14.4404 4.10005 12.1318 4.10005H9.95039C9.21889 4.09928 8.52052 3.7501 8.08115 3.16582L7.37739 2.23004C7.15617 1.93328 6.80236 1.75753 6.43237 1.75676ZM11.8853 10.0144C12.2044 10.0144 12.4634 10.2734 12.4634 10.5925C12.4634 10.9117 12.2044 11.1706 11.8853 11.1706H5.15219C4.83307 11.1706 4.57407 10.9117 4.57407 10.5925C4.57407 10.2734 4.83307 10.0144 5.15219 10.0144H11.8853Z"
+                fill="#56555C" />
+            </svg>
+            <p class="project-header-title">Latest Projects</p>
+          </div>
+          <div class="project-section-header-right">
+            <div class="project-section-search">
+              <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.68528 0.0543873C6.61727 0.0533837 7.53098 0.312883 8.32331 0.803601C9.11565 1.29432 9.75506 1.99672 10.1694 2.83154C10.5837 3.66636 10.7565 4.60037 10.6682 5.52816C10.5799 6.45596 10.234 7.3406 9.6696 8.08226L12.8349 11.2423C12.9546 11.3622 13.0242 11.5231 13.0295 11.6924C13.0348 11.8617 12.9756 12.0266 12.8637 12.1538C12.7518 12.281 12.5957 12.3608 12.4271 12.377C12.2585 12.3932 12.09 12.3447 11.9559 12.2412L11.8932 12.186L8.72658 9.02724C8.09575 9.50929 7.35919 9.83419 6.57786 9.97505C5.79653 10.1159 4.99288 10.0687 4.23342 9.8373C3.47396 9.6059 2.78052 9.19697 2.21049 8.64436C1.64045 8.09174 1.2102 7.41133 0.955344 6.65942C0.700487 5.90751 0.628348 5.10571 0.744897 4.32038C0.861446 3.53506 1.16333 2.78877 1.62557 2.14328C2.08782 1.49779 2.69712 0.971657 3.40308 0.608411C4.10904 0.245165 4.89135 0.0552523 5.68528 0.0543873ZM5.68666 1.38772C4.7142 1.38873 3.78197 1.776 3.09505 2.46435C2.40813 3.15269 2.02279 4.08573 2.0238 5.05819C2.02481 6.03065 2.41208 6.96288 3.10043 7.6498C3.78877 8.33672 4.72181 8.72206 5.69426 8.72105C6.66673 8.72004 7.59896 8.33277 8.28588 7.64442C8.9728 6.95607 9.35814 6.02304 9.35713 5.05058C9.35612 4.07812 8.96885 3.14589 8.2805 2.45897C7.59215 1.77205 6.65912 1.38671 5.68666 1.38772Z"
+                  fill="currentColor" />
+              </svg>
+              <input type="text" placeholder="Search">
+            </div>
+            <div class="project-header-line"></div>
+            <div class="project-header-add-icon">
+              <svg width="13" height="12" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.55271 4.81779H5.09111V7.25805C5.09111 7.65096 4.76981 7.96947 4.37347 7.96947C3.97712 7.96947 3.65582 7.65096 3.65582 7.25805V4.81779H1.19422C0.824523 4.77984 0.543579 4.471 0.543579 4.10255C0.543579 3.73409 0.824523 3.42525 1.19422 3.3873H3.64811V0.954696C3.68639 0.5882 3.99793 0.309692 4.36961 0.309692C4.74129 0.309692 5.05283 0.5882 5.09111 0.954696V3.3873H7.55271C7.92241 3.42525 8.20336 3.73409 8.20336 4.10255C8.20336 4.471 7.92241 4.77984 7.55271 4.81779Z"
+                  fill="#FFFFFF" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project cards section -->
+        <div class="project-cards">
+
+          <!-- project card -->
+          <a href="#">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="../../assets/images/project-pic1.png" alt="Project Picture">
+              </div>
+              <div class="project-content">
+                <div class="project-logo">
+                  <img src="../../assets/images/project-logo.png" alt="Project Logo">
+                </div>
+                <div class="project-info">
+                  <div class="project-title">
+                    <p>CreativeSync Hub</p>
+                    <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M3.87888 1.81548C3.87888 2.64629 3.20538 3.3198 2.37456 3.3198C1.54375 3.3198 0.870239 2.64629 0.870239 1.81548C0.870239 0.984665 1.54375 0.311157 2.37456 0.311157C3.20538 0.311157 3.87888 0.984665 3.87888 1.81548Z"
+                        fill="#56555C" />
+                      <path
+                        d="M9.89618 1.81548C9.89618 2.64629 9.22267 3.3198 8.39185 3.3198C7.56104 3.3198 6.88753 2.64629 6.88753 1.81548C6.88753 0.984665 7.56104 0.311157 8.39185 0.311157C9.22267 0.311157 9.89618 0.984665 9.89618 1.81548Z"
+                        fill="#56555C" />
+                      <path
+                        d="M15.9135 1.81548C15.9135 2.64629 15.24 3.3198 14.4091 3.3198C13.5783 3.3198 12.9048 2.64629 12.9048 1.81548C12.9048 0.984665 13.5783 0.311157 14.4091 0.311157C15.24 0.311157 15.9135 0.984665 15.9135 1.81548Z"
+                        fill="#56555C" />
+                    </svg>
+                  </div>
+                  <p class="project-dis">Small and Consices headlin</p>
+                </div>
+              </div>
+              <div class="down-content down-content-extra-magin">
+                <div class="content-category">
+                  <p class="ux">Profitable</p>
+                  <p class="setup m-left">Ai</p>
+                  <p class="shopping m-left">1person</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- project card -->
+          <a href="#">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="../../assets/images/project-pic1.png" alt="Project Picture">
+              </div>
+              <div class="project-content">
+                <div class="project-logo">
+                  <img src="../../assets/images/project-logo.png" alt="Project Logo">
+                </div>
+                <div class="project-info">
+                  <div class="project-title">
+                    <p>CreativeSync Hub</p>
+                    <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M3.87888 1.81548C3.87888 2.64629 3.20538 3.3198 2.37456 3.3198C1.54375 3.3198 0.870239 2.64629 0.870239 1.81548C0.870239 0.984665 1.54375 0.311157 2.37456 0.311157C3.20538 0.311157 3.87888 0.984665 3.87888 1.81548Z"
+                        fill="#56555C" />
+                      <path
+                        d="M9.89618 1.81548C9.89618 2.64629 9.22267 3.3198 8.39185 3.3198C7.56104 3.3198 6.88753 2.64629 6.88753 1.81548C6.88753 0.984665 7.56104 0.311157 8.39185 0.311157C9.22267 0.311157 9.89618 0.984665 9.89618 1.81548Z"
+                        fill="#56555C" />
+                      <path
+                        d="M15.9135 1.81548C15.9135 2.64629 15.24 3.3198 14.4091 3.3198C13.5783 3.3198 12.9048 2.64629 12.9048 1.81548C12.9048 0.984665 13.5783 0.311157 14.4091 0.311157C15.24 0.311157 15.9135 0.984665 15.9135 1.81548Z"
+                        fill="#56555C" />
+                    </svg>
+                  </div>
+                  <p class="project-dis">Small and Consices headlin</p>
+                </div>
+              </div>
+              <div class="down-content down-content-extra-magin">
+                <div class="content-category">
+                  <p class="ux">Profitable</p>
+                  <p class="setup m-left">Ai</p>
+                  <p class="shopping m-left">1person</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- project card -->
+          <a href="#">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="../../assets/images/project-pic1.png" alt="Project Picture">
+              </div>
+              <div class="project-content">
+                <div class="project-logo">
+                  <img src="../../assets/images/project-logo.png" alt="Project Logo">
+                </div>
+                <div class="project-info">
+                  <div class="project-title">
+                    <p>CreativeSync Hub</p>
+                    <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M3.87888 1.81548C3.87888 2.64629 3.20538 3.3198 2.37456 3.3198C1.54375 3.3198 0.870239 2.64629 0.870239 1.81548C0.870239 0.984665 1.54375 0.311157 2.37456 0.311157C3.20538 0.311157 3.87888 0.984665 3.87888 1.81548Z"
+                        fill="#56555C" />
+                      <path
+                        d="M9.89618 1.81548C9.89618 2.64629 9.22267 3.3198 8.39185 3.3198C7.56104 3.3198 6.88753 2.64629 6.88753 1.81548C6.88753 0.984665 7.56104 0.311157 8.39185 0.311157C9.22267 0.311157 9.89618 0.984665 9.89618 1.81548Z"
+                        fill="#56555C" />
+                      <path
+                        d="M15.9135 1.81548C15.9135 2.64629 15.24 3.3198 14.4091 3.3198C13.5783 3.3198 12.9048 2.64629 12.9048 1.81548C12.9048 0.984665 13.5783 0.311157 14.4091 0.311157C15.24 0.311157 15.9135 0.984665 15.9135 1.81548Z"
+                        fill="#56555C" />
+                    </svg>
+                  </div>
+                  <p class="project-dis">Small and Consices headlin</p>
+                </div>
+              </div>
+              <div class="down-content down-content-extra-magin">
+                <div class="content-category">
+                  <p class="ux">Profitable</p>
+                  <p class="setup m-left">Ai</p>
+                  <p class="shopping m-left">1person</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- project card -->
+          <a href="#">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="../../assets/images/project-pic1.png" alt="Project Picture">
+              </div>
+              <div class="project-content">
+                <div class="project-logo">
+                  <img src="../../assets/images/project-logo.png" alt="Project Logo">
+                </div>
+                <div class="project-info">
+                  <div class="project-title">
+                    <p>CreativeSync Hub</p>
+                    <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M3.87888 1.81548C3.87888 2.64629 3.20538 3.3198 2.37456 3.3198C1.54375 3.3198 0.870239 2.64629 0.870239 1.81548C0.870239 0.984665 1.54375 0.311157 2.37456 0.311157C3.20538 0.311157 3.87888 0.984665 3.87888 1.81548Z"
+                        fill="#56555C" />
+                      <path
+                        d="M9.89618 1.81548C9.89618 2.64629 9.22267 3.3198 8.39185 3.3198C7.56104 3.3198 6.88753 2.64629 6.88753 1.81548C6.88753 0.984665 7.56104 0.311157 8.39185 0.311157C9.22267 0.311157 9.89618 0.984665 9.89618 1.81548Z"
+                        fill="#56555C" />
+                      <path
+                        d="M15.9135 1.81548C15.9135 2.64629 15.24 3.3198 14.4091 3.3198C13.5783 3.3198 12.9048 2.64629 12.9048 1.81548C12.9048 0.984665 13.5783 0.311157 14.4091 0.311157C15.24 0.311157 15.9135 0.984665 15.9135 1.81548Z"
+                        fill="#56555C" />
+                    </svg>
+                  </div>
+                  <p class="project-dis">Small and Consices headlin</p>
+                </div>
+              </div>
+              <div class="down-content down-content-extra-magin">
+                <div class="content-category">
+                  <p class="ux">Profitable</p>
+                  <p class="setup m-left">Ai</p>
+                  <p class="shopping m-left">1person</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- project card -->
+          <a href="#">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="../../assets/images/project-pic1.png" alt="Project Picture">
+              </div>
+              <div class="project-content">
+                <div class="project-logo">
+                  <img src="../../assets/images/project-logo.png" alt="Project Logo">
+                </div>
+                <div class="project-info">
+                  <div class="project-title">
+                    <p>CreativeSync Hub</p>
+                    <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M3.87888 1.81548C3.87888 2.64629 3.20538 3.3198 2.37456 3.3198C1.54375 3.3198 0.870239 2.64629 0.870239 1.81548C0.870239 0.984665 1.54375 0.311157 2.37456 0.311157C3.20538 0.311157 3.87888 0.984665 3.87888 1.81548Z"
+                        fill="#56555C" />
+                      <path
+                        d="M9.89618 1.81548C9.89618 2.64629 9.22267 3.3198 8.39185 3.3198C7.56104 3.3198 6.88753 2.64629 6.88753 1.81548C6.88753 0.984665 7.56104 0.311157 8.39185 0.311157C9.22267 0.311157 9.89618 0.984665 9.89618 1.81548Z"
+                        fill="#56555C" />
+                      <path
+                        d="M15.9135 1.81548C15.9135 2.64629 15.24 3.3198 14.4091 3.3198C13.5783 3.3198 12.9048 2.64629 12.9048 1.81548C12.9048 0.984665 13.5783 0.311157 14.4091 0.311157C15.24 0.311157 15.9135 0.984665 15.9135 1.81548Z"
+                        fill="#56555C" />
+                    </svg>
+                  </div>
+                  <p class="project-dis">Small and Consices headlin</p>
+                </div>
+              </div>
+              <div class="down-content down-content-extra-magin">
+                <div class="content-category">
+                  <p class="ux">Profitable</p>
+                  <p class="setup m-left">Ai</p>
+                  <p class="shopping m-left">1person</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- project card -->
+          <a href="#">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="../../assets/images/project-pic1.png" alt="Project Picture">
+              </div>
+              <div class="project-content">
+                <div class="project-logo">
+                  <img src="../../assets/images/project-logo.png" alt="Project Logo">
+                </div>
+                <div class="project-info">
+                  <div class="project-title">
+                    <p>CreativeSync Hub</p>
+                    <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M3.87888 1.81548C3.87888 2.64629 3.20538 3.3198 2.37456 3.3198C1.54375 3.3198 0.870239 2.64629 0.870239 1.81548C0.870239 0.984665 1.54375 0.311157 2.37456 0.311157C3.20538 0.311157 3.87888 0.984665 3.87888 1.81548Z"
+                        fill="#56555C" />
+                      <path
+                        d="M9.89618 1.81548C9.89618 2.64629 9.22267 3.3198 8.39185 3.3198C7.56104 3.3198 6.88753 2.64629 6.88753 1.81548C6.88753 0.984665 7.56104 0.311157 8.39185 0.311157C9.22267 0.311157 9.89618 0.984665 9.89618 1.81548Z"
+                        fill="#56555C" />
+                      <path
+                        d="M15.9135 1.81548C15.9135 2.64629 15.24 3.3198 14.4091 3.3198C13.5783 3.3198 12.9048 2.64629 12.9048 1.81548C12.9048 0.984665 13.5783 0.311157 14.4091 0.311157C15.24 0.311157 15.9135 0.984665 15.9135 1.81548Z"
+                        fill="#56555C" />
+                    </svg>
+                  </div>
+                  <p class="project-dis">Small and Consices headlin</p>
+                </div>
+              </div>
+              <div class="down-content down-content-extra-magin">
+                <div class="content-category">
+                  <p class="ux">Profitable</p>
+                  <p class="setup m-left">Ai</p>
+                  <p class="shopping m-left">1person</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- project card -->
+          <a href="#">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="../../assets/images/project-pic1.png" alt="Project Picture">
+              </div>
+              <div class="project-content">
+                <div class="project-logo">
+                  <img src="../../assets/images/project-logo.png" alt="Project Logo">
+                </div>
+                <div class="project-info">
+                  <div class="project-title">
+                    <p>CreativeSync Hub</p>
+                    <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M3.87888 1.81548C3.87888 2.64629 3.20538 3.3198 2.37456 3.3198C1.54375 3.3198 0.870239 2.64629 0.870239 1.81548C0.870239 0.984665 1.54375 0.311157 2.37456 0.311157C3.20538 0.311157 3.87888 0.984665 3.87888 1.81548Z"
+                        fill="#56555C" />
+                      <path
+                        d="M9.89618 1.81548C9.89618 2.64629 9.22267 3.3198 8.39185 3.3198C7.56104 3.3198 6.88753 2.64629 6.88753 1.81548C6.88753 0.984665 7.56104 0.311157 8.39185 0.311157C9.22267 0.311157 9.89618 0.984665 9.89618 1.81548Z"
+                        fill="#56555C" />
+                      <path
+                        d="M15.9135 1.81548C15.9135 2.64629 15.24 3.3198 14.4091 3.3198C13.5783 3.3198 12.9048 2.64629 12.9048 1.81548C12.9048 0.984665 13.5783 0.311157 14.4091 0.311157C15.24 0.311157 15.9135 0.984665 15.9135 1.81548Z"
+                        fill="#56555C" />
+                    </svg>
+                  </div>
+                  <p class="project-dis">Small and Consices headlin</p>
+                </div>
+              </div>
+              <div class="down-content down-content-extra-magin">
+                <div class="content-category">
+                  <p class="ux">Profitable</p>
+                  <p class="setup m-left">Ai</p>
+                  <p class="shopping m-left">1person</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- project card -->
+          <a href="#">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="../../assets/images/project-pic1.png" alt="Project Picture">
+              </div>
+              <div class="project-content">
+                <div class="project-logo">
+                  <img src="../../assets/images/project-logo.png" alt="Project Logo">
+                </div>
+                <div class="project-info">
+                  <div class="project-title">
+                    <p>CreativeSync Hub</p>
+                    <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M3.87888 1.81548C3.87888 2.64629 3.20538 3.3198 2.37456 3.3198C1.54375 3.3198 0.870239 2.64629 0.870239 1.81548C0.870239 0.984665 1.54375 0.311157 2.37456 0.311157C3.20538 0.311157 3.87888 0.984665 3.87888 1.81548Z"
+                        fill="#56555C" />
+                      <path
+                        d="M9.89618 1.81548C9.89618 2.64629 9.22267 3.3198 8.39185 3.3198C7.56104 3.3198 6.88753 2.64629 6.88753 1.81548C6.88753 0.984665 7.56104 0.311157 8.39185 0.311157C9.22267 0.311157 9.89618 0.984665 9.89618 1.81548Z"
+                        fill="#56555C" />
+                      <path
+                        d="M15.9135 1.81548C15.9135 2.64629 15.24 3.3198 14.4091 3.3198C13.5783 3.3198 12.9048 2.64629 12.9048 1.81548C12.9048 0.984665 13.5783 0.311157 14.4091 0.311157C15.24 0.311157 15.9135 0.984665 15.9135 1.81548Z"
+                        fill="#56555C" />
+                    </svg>
+                  </div>
+                  <p class="project-dis">Small and Consices headlin</p>
+                </div>
+              </div>
+              <div class="down-content down-content-extra-magin">
+                <div class="content-category">
+                  <p class="ux">Profitable</p>
+                  <p class="setup m-left">Ai</p>
+                  <p class="shopping m-left">1person</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- project card -->
+          <a href="#">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="../../assets/images/project-pic1.png" alt="Project Picture">
+              </div>
+              <div class="project-content">
+                <div class="project-logo">
+                  <img src="../../assets/images/project-logo.png" alt="Project Logo">
+                </div>
+                <div class="project-info">
+                  <div class="project-title">
+                    <p>CreativeSync Hub</p>
+                    <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M3.87888 1.81548C3.87888 2.64629 3.20538 3.3198 2.37456 3.3198C1.54375 3.3198 0.870239 2.64629 0.870239 1.81548C0.870239 0.984665 1.54375 0.311157 2.37456 0.311157C3.20538 0.311157 3.87888 0.984665 3.87888 1.81548Z"
+                        fill="#56555C" />
+                      <path
+                        d="M9.89618 1.81548C9.89618 2.64629 9.22267 3.3198 8.39185 3.3198C7.56104 3.3198 6.88753 2.64629 6.88753 1.81548C6.88753 0.984665 7.56104 0.311157 8.39185 0.311157C9.22267 0.311157 9.89618 0.984665 9.89618 1.81548Z"
+                        fill="#56555C" />
+                      <path
+                        d="M15.9135 1.81548C15.9135 2.64629 15.24 3.3198 14.4091 3.3198C13.5783 3.3198 12.9048 2.64629 12.9048 1.81548C12.9048 0.984665 13.5783 0.311157 14.4091 0.311157C15.24 0.311157 15.9135 0.984665 15.9135 1.81548Z"
+                        fill="#56555C" />
+                    </svg>
+                  </div>
+                  <p class="project-dis">Small and Consices headlin</p>
+                </div>
+              </div>
+              <div class="down-content down-content-extra-magin">
+                <div class="content-category">
+                  <p class="ux">Profitable</p>
+                  <p class="setup m-left">Ai</p>
+                  <p class="shopping m-left">1person</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- project card -->
+          <a href="#">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="../../assets/images/project-pic1.png" alt="Project Picture">
+              </div>
+              <div class="project-content">
+                <div class="project-logo">
+                  <img src="../../assets/images/project-logo.png" alt="Project Logo">
+                </div>
+                <div class="project-info">
+                  <div class="project-title">
+                    <p>CreativeSync Hub</p>
+                    <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M3.87888 1.81548C3.87888 2.64629 3.20538 3.3198 2.37456 3.3198C1.54375 3.3198 0.870239 2.64629 0.870239 1.81548C0.870239 0.984665 1.54375 0.311157 2.37456 0.311157C3.20538 0.311157 3.87888 0.984665 3.87888 1.81548Z"
+                        fill="#56555C" />
+                      <path
+                        d="M9.89618 1.81548C9.89618 2.64629 9.22267 3.3198 8.39185 3.3198C7.56104 3.3198 6.88753 2.64629 6.88753 1.81548C6.88753 0.984665 7.56104 0.311157 8.39185 0.311157C9.22267 0.311157 9.89618 0.984665 9.89618 1.81548Z"
+                        fill="#56555C" />
+                      <path
+                        d="M15.9135 1.81548C15.9135 2.64629 15.24 3.3198 14.4091 3.3198C13.5783 3.3198 12.9048 2.64629 12.9048 1.81548C12.9048 0.984665 13.5783 0.311157 14.4091 0.311157C15.24 0.311157 15.9135 0.984665 15.9135 1.81548Z"
+                        fill="#56555C" />
+                    </svg>
+                  </div>
+                  <p class="project-dis">Small and Consices headlin</p>
+                </div>
+              </div>
+              <div class="down-content down-content-extra-magin">
+                <div class="content-category">
+                  <p class="ux">Profitable</p>
+                  <p class="setup m-left">Ai</p>
+                  <p class="shopping m-left">1person</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- project card -->
+          <a href="#">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="../../assets/images/project-pic1.png" alt="Project Picture">
+              </div>
+              <div class="project-content">
+                <div class="project-logo">
+                  <img src="../../assets/images/project-logo.png" alt="Project Logo">
+                </div>
+                <div class="project-info">
+                  <div class="project-title">
+                    <p>CreativeSync Hub</p>
+                    <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M3.87888 1.81548C3.87888 2.64629 3.20538 3.3198 2.37456 3.3198C1.54375 3.3198 0.870239 2.64629 0.870239 1.81548C0.870239 0.984665 1.54375 0.311157 2.37456 0.311157C3.20538 0.311157 3.87888 0.984665 3.87888 1.81548Z"
+                        fill="#56555C" />
+                      <path
+                        d="M9.89618 1.81548C9.89618 2.64629 9.22267 3.3198 8.39185 3.3198C7.56104 3.3198 6.88753 2.64629 6.88753 1.81548C6.88753 0.984665 7.56104 0.311157 8.39185 0.311157C9.22267 0.311157 9.89618 0.984665 9.89618 1.81548Z"
+                        fill="#56555C" />
+                      <path
+                        d="M15.9135 1.81548C15.9135 2.64629 15.24 3.3198 14.4091 3.3198C13.5783 3.3198 12.9048 2.64629 12.9048 1.81548C12.9048 0.984665 13.5783 0.311157 14.4091 0.311157C15.24 0.311157 15.9135 0.984665 15.9135 1.81548Z"
+                        fill="#56555C" />
+                    </svg>
+                  </div>
+                  <p class="project-dis">Small and Consices headlin</p>
+                </div>
+              </div>
+              <div class="down-content down-content-extra-magin">
+                <div class="content-category">
+                  <p class="ux">Profitable</p>
+                  <p class="setup m-left">Ai</p>
+                  <p class="shopping m-left">1person</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- project card -->
+          <a href="#">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="../../assets/images/project-pic1.png" alt="Project Picture">
+              </div>
+              <div class="project-content">
+                <div class="project-logo">
+                  <img src="../../assets/images/project-logo.png" alt="Project Logo">
+                </div>
+                <div class="project-info">
+                  <div class="project-title">
+                    <p>CreativeSync Hub</p>
+                    <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M3.87888 1.81548C3.87888 2.64629 3.20538 3.3198 2.37456 3.3198C1.54375 3.3198 0.870239 2.64629 0.870239 1.81548C0.870239 0.984665 1.54375 0.311157 2.37456 0.311157C3.20538 0.311157 3.87888 0.984665 3.87888 1.81548Z"
+                        fill="#56555C" />
+                      <path
+                        d="M9.89618 1.81548C9.89618 2.64629 9.22267 3.3198 8.39185 3.3198C7.56104 3.3198 6.88753 2.64629 6.88753 1.81548C6.88753 0.984665 7.56104 0.311157 8.39185 0.311157C9.22267 0.311157 9.89618 0.984665 9.89618 1.81548Z"
+                        fill="#56555C" />
+                      <path
+                        d="M15.9135 1.81548C15.9135 2.64629 15.24 3.3198 14.4091 3.3198C13.5783 3.3198 12.9048 2.64629 12.9048 1.81548C12.9048 0.984665 13.5783 0.311157 14.4091 0.311157C15.24 0.311157 15.9135 0.984665 15.9135 1.81548Z"
+                        fill="#56555C" />
+                    </svg>
+                  </div>
+                  <p class="project-dis">Small and Consices headlin</p>
+                </div>
+              </div>
+              <div class="down-content down-content-extra-magin">
+                <div class="content-category">
+                  <p class="ux">Profitable</p>
+                  <p class="setup m-left">Ai</p>
+                  <p class="shopping m-left">1person</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- project card -->
+          <a href="#">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="../../assets/images/project-pic1.png" alt="Project Picture">
+              </div>
+              <div class="project-content">
+                <div class="project-logo">
+                  <img src="../../assets/images/project-logo.png" alt="Project Logo">
+                </div>
+                <div class="project-info">
+                  <div class="project-title">
+                    <p>CreativeSync Hub</p>
+                    <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M3.87888 1.81548C3.87888 2.64629 3.20538 3.3198 2.37456 3.3198C1.54375 3.3198 0.870239 2.64629 0.870239 1.81548C0.870239 0.984665 1.54375 0.311157 2.37456 0.311157C3.20538 0.311157 3.87888 0.984665 3.87888 1.81548Z"
+                        fill="#56555C" />
+                      <path
+                        d="M9.89618 1.81548C9.89618 2.64629 9.22267 3.3198 8.39185 3.3198C7.56104 3.3198 6.88753 2.64629 6.88753 1.81548C6.88753 0.984665 7.56104 0.311157 8.39185 0.311157C9.22267 0.311157 9.89618 0.984665 9.89618 1.81548Z"
+                        fill="#56555C" />
+                      <path
+                        d="M15.9135 1.81548C15.9135 2.64629 15.24 3.3198 14.4091 3.3198C13.5783 3.3198 12.9048 2.64629 12.9048 1.81548C12.9048 0.984665 13.5783 0.311157 14.4091 0.311157C15.24 0.311157 15.9135 0.984665 15.9135 1.81548Z"
+                        fill="#56555C" />
+                    </svg>
+                  </div>
+                  <p class="project-dis">Small and Consices headlin</p>
+                </div>
+              </div>
+              <div class="down-content down-content-extra-magin">
+                <div class="content-category">
+                  <p class="ux">Profitable</p>
+                  <p class="setup m-left">Ai</p>
+                  <p class="shopping m-left">1person</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- project card -->
+          <a href="#">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="../../assets/images/project-pic1.png" alt="Project Picture">
+              </div>
+              <div class="project-content">
+                <div class="project-logo">
+                  <img src="../../assets/images/project-logo.png" alt="Project Logo">
+                </div>
+                <div class="project-info">
+                  <div class="project-title">
+                    <p>CreativeSync Hub</p>
+                    <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M3.87888 1.81548C3.87888 2.64629 3.20538 3.3198 2.37456 3.3198C1.54375 3.3198 0.870239 2.64629 0.870239 1.81548C0.870239 0.984665 1.54375 0.311157 2.37456 0.311157C3.20538 0.311157 3.87888 0.984665 3.87888 1.81548Z"
+                        fill="#56555C" />
+                      <path
+                        d="M9.89618 1.81548C9.89618 2.64629 9.22267 3.3198 8.39185 3.3198C7.56104 3.3198 6.88753 2.64629 6.88753 1.81548C6.88753 0.984665 7.56104 0.311157 8.39185 0.311157C9.22267 0.311157 9.89618 0.984665 9.89618 1.81548Z"
+                        fill="#56555C" />
+                      <path
+                        d="M15.9135 1.81548C15.9135 2.64629 15.24 3.3198 14.4091 3.3198C13.5783 3.3198 12.9048 2.64629 12.9048 1.81548C12.9048 0.984665 13.5783 0.311157 14.4091 0.311157C15.24 0.311157 15.9135 0.984665 15.9135 1.81548Z"
+                        fill="#56555C" />
+                    </svg>
+                  </div>
+                  <p class="project-dis">Small and Consices headlin</p>
+                </div>
+              </div>
+              <div class="down-content down-content-extra-magin">
+                <div class="content-category">
+                  <p class="ux">Profitable</p>
+                  <p class="setup m-left">Ai</p>
+                  <p class="shopping m-left">1person</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+        </div>
+        <!-- End of project card section -->
+
+        <!-- Folders header -->
+        <div class="project-section-header folder-header-margin">
+          <div class="project-section-header-left">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M6.43314 0.600525C7.16619 0.601296 7.86455 0.951249 8.30238 1.5363L9.0046 2.47054C9.22736 2.76653 9.58117 2.94305 9.95117 2.94382H12.1318C15.1087 2.94382 16.4954 4.46928 16.4954 7.7445L16.4739 11.5732C16.4731 14.6318 14.5722 16.5326 11.5121 16.5326H5.51355C2.44722 16.5326 0.541748 14.631 0.541748 11.5709V5.55922C0.541748 2.26858 2.00554 0.600525 4.89149 0.600525H6.43314ZM6.43237 1.75676H4.89149C2.65303 1.75676 1.69798 2.89449 1.69798 5.55922V11.5709C1.69798 14.0252 3.05308 15.3764 5.51355 15.3764H11.5121C13.9664 15.3764 15.3176 14.0252 15.3176 11.5709V11.5685L15.3392 7.74142C15.3392 5.12139 14.4404 4.10005 12.1318 4.10005H9.95039C9.21889 4.09928 8.52052 3.7501 8.08115 3.16582L7.37739 2.23004C7.15617 1.93328 6.80236 1.75753 6.43237 1.75676ZM11.8853 10.0144C12.2044 10.0144 12.4634 10.2734 12.4634 10.5925C12.4634 10.9117 12.2044 11.1706 11.8853 11.1706H5.15219C4.83307 11.1706 4.57407 10.9117 4.57407 10.5925C4.57407 10.2734 4.83307 10.0144 5.15219 10.0144H11.8853Z"
+                fill="#56555C" />
+            </svg>
+            <p class="project-header-title">Recent Folders</p>
+          </div>
+          <div class="project-section-header-right">
+            <div class="project-section-search">
+              <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.68528 0.0543873C6.61727 0.0533837 7.53098 0.312883 8.32331 0.803601C9.11565 1.29432 9.75506 1.99672 10.1694 2.83154C10.5837 3.66636 10.7565 4.60037 10.6682 5.52816C10.5799 6.45596 10.234 7.3406 9.6696 8.08226L12.8349 11.2423C12.9546 11.3622 13.0242 11.5231 13.0295 11.6924C13.0348 11.8617 12.9756 12.0266 12.8637 12.1538C12.7518 12.281 12.5957 12.3608 12.4271 12.377C12.2585 12.3932 12.09 12.3447 11.9559 12.2412L11.8932 12.186L8.72658 9.02724C8.09575 9.50929 7.35919 9.83419 6.57786 9.97505C5.79653 10.1159 4.99288 10.0687 4.23342 9.8373C3.47396 9.6059 2.78052 9.19697 2.21049 8.64436C1.64045 8.09174 1.2102 7.41133 0.955344 6.65942C0.700487 5.90751 0.628348 5.10571 0.744897 4.32038C0.861446 3.53506 1.16333 2.78877 1.62557 2.14328C2.08782 1.49779 2.69712 0.971657 3.40308 0.608411C4.10904 0.245165 4.89135 0.0552523 5.68528 0.0543873ZM5.68666 1.38772C4.7142 1.38873 3.78197 1.776 3.09505 2.46435C2.40813 3.15269 2.02279 4.08573 2.0238 5.05819C2.02481 6.03065 2.41208 6.96288 3.10043 7.6498C3.78877 8.33672 4.72181 8.72206 5.69426 8.72105C6.66673 8.72004 7.59896 8.33277 8.28588 7.64442C8.9728 6.95607 9.35814 6.02304 9.35713 5.05058C9.35612 4.07812 8.96885 3.14589 8.2805 2.45897C7.59215 1.77205 6.65912 1.38671 5.68666 1.38772Z"
+                  fill="currentColor" />
+              </svg>
+              <input type="text" placeholder="Search">
+            </div>
+            <div class="project-header-line"></div>
+            <div class="project-header-add-icon">
+              <svg width="13" height="12" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.55271 4.81779H5.09111V7.25805C5.09111 7.65096 4.76981 7.96947 4.37347 7.96947C3.97712 7.96947 3.65582 7.65096 3.65582 7.25805V4.81779H1.19422C0.824523 4.77984 0.543579 4.471 0.543579 4.10255C0.543579 3.73409 0.824523 3.42525 1.19422 3.3873H3.64811V0.954696C3.68639 0.5882 3.99793 0.309692 4.36961 0.309692C4.74129 0.309692 5.05283 0.5882 5.09111 0.954696V3.3873H7.55271C7.92241 3.42525 8.20336 3.73409 8.20336 4.10255C8.20336 4.471 7.92241 4.77984 7.55271 4.81779Z"
+                  fill="#FFFFFF" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- End of folders header section -->
+
+        <!-- Resent folders -->
+        <div class="recent-folders">
+
+          <!-- Folder -->
+          <a href="#">
+            <div class="folder">
+              <div class="folder-top"></div>
+              <div class="folder-body">
+                <div class="folder-header">
+                  <div class="folder-title-icon">
+                    <div></div>
+                  </div>
+                  <p class="folder-title">Team projects</p>
+                </div>
+                <div class="folder-footer">
+                  <p>Apr2, 2023</p>
+                  <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.87888 1.81548C3.87888 2.64629 3.20538 3.3198 2.37456 3.3198C1.54375 3.3198 0.870239 2.64629 0.870239 1.81548C0.870239 0.984665 1.54375 0.311157 2.37456 0.311157C3.20538 0.311157 3.87888 0.984665 3.87888 1.81548Z"
+                      fill="#56555C" />
+                    <path
+                      d="M9.89618 1.81548C9.89618 2.64629 9.22267 3.3198 8.39185 3.3198C7.56104 3.3198 6.88753 2.64629 6.88753 1.81548C6.88753 0.984665 7.56104 0.311157 8.39185 0.311157C9.22267 0.311157 9.89618 0.984665 9.89618 1.81548Z"
+                      fill="#56555C" />
+                    <path
+                      d="M15.9135 1.81548C15.9135 2.64629 15.24 3.3198 14.4091 3.3198C13.5783 3.3198 12.9048 2.64629 12.9048 1.81548C12.9048 0.984665 13.5783 0.311157 14.4091 0.311157C15.24 0.311157 15.9135 0.984665 15.9135 1.81548Z"
+                      fill="#56555C" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Folder -->
+          <a href="#">
+            <div class="folder">
+              <div class="folder-top"></div>
+              <div class="folder-body">
+                <div class="folder-header">
+                  <div class="folder-title-icon">
+                    <div></div>
+                  </div>
+                  <p class="folder-title">Charities</p>
+                </div>
+                <div class="folder-footer">
+                  <p>Apr2, 2023</p>
+                  <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.87888 1.81548C3.87888 2.64629 3.20538 3.3198 2.37456 3.3198C1.54375 3.3198 0.870239 2.64629 0.870239 1.81548C0.870239 0.984665 1.54375 0.311157 2.37456 0.311157C3.20538 0.311157 3.87888 0.984665 3.87888 1.81548Z"
+                      fill="#56555C" />
+                    <path
+                      d="M9.89618 1.81548C9.89618 2.64629 9.22267 3.3198 8.39185 3.3198C7.56104 3.3198 6.88753 2.64629 6.88753 1.81548C6.88753 0.984665 7.56104 0.311157 8.39185 0.311157C9.22267 0.311157 9.89618 0.984665 9.89618 1.81548Z"
+                      fill="#56555C" />
+                    <path
+                      d="M15.9135 1.81548C15.9135 2.64629 15.24 3.3198 14.4091 3.3198C13.5783 3.3198 12.9048 2.64629 12.9048 1.81548C12.9048 0.984665 13.5783 0.311157 14.4091 0.311157C15.24 0.311157 15.9135 0.984665 15.9135 1.81548Z"
+                      fill="#56555C" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Folder -->
+          <a href="#">
+            <div class="folder">
+              <div class="folder-top"></div>
+              <div class="folder-body">
+                <div class="folder-header">
+                  <div class="folder-title-icon">
+                    <div></div>
+                  </div>
+                  <p class="folder-title">Collabrations</p>
+                </div>
+                <div class="folder-footer">
+                  <p>Apr2, 2023</p>
+                  <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.87888 1.81548C3.87888 2.64629 3.20538 3.3198 2.37456 3.3198C1.54375 3.3198 0.870239 2.64629 0.870239 1.81548C0.870239 0.984665 1.54375 0.311157 2.37456 0.311157C3.20538 0.311157 3.87888 0.984665 3.87888 1.81548Z"
+                      fill="#56555C" />
+                    <path
+                      d="M9.89618 1.81548C9.89618 2.64629 9.22267 3.3198 8.39185 3.3198C7.56104 3.3198 6.88753 2.64629 6.88753 1.81548C6.88753 0.984665 7.56104 0.311157 8.39185 0.311157C9.22267 0.311157 9.89618 0.984665 9.89618 1.81548Z"
+                      fill="#56555C" />
+                    <path
+                      d="M15.9135 1.81548C15.9135 2.64629 15.24 3.3198 14.4091 3.3198C13.5783 3.3198 12.9048 2.64629 12.9048 1.81548C12.9048 0.984665 13.5783 0.311157 14.4091 0.311157C15.24 0.311157 15.9135 0.984665 15.9135 1.81548Z"
+                      fill="#56555C" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Folder -->
+          <a href="#">
+            <div class="folder">
+              <div class="folder-top"></div>
+              <div class="folder-body">
+                <div class="folder-header">
+                  <div class="folder-title-icon">
+                    <div></div>
+                  </div>
+                  <p class="folder-title">Personal Projects</p>
+                </div>
+                <div class="folder-footer">
+                  <p>Apr2, 2023</p>
+                  <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.87888 1.81548C3.87888 2.64629 3.20538 3.3198 2.37456 3.3198C1.54375 3.3198 0.870239 2.64629 0.870239 1.81548C0.870239 0.984665 1.54375 0.311157 2.37456 0.311157C3.20538 0.311157 3.87888 0.984665 3.87888 1.81548Z"
+                      fill="#56555C" />
+                    <path
+                      d="M9.89618 1.81548C9.89618 2.64629 9.22267 3.3198 8.39185 3.3198C7.56104 3.3198 6.88753 2.64629 6.88753 1.81548C6.88753 0.984665 7.56104 0.311157 8.39185 0.311157C9.22267 0.311157 9.89618 0.984665 9.89618 1.81548Z"
+                      fill="#56555C" />
+                    <path
+                      d="M15.9135 1.81548C15.9135 2.64629 15.24 3.3198 14.4091 3.3198C13.5783 3.3198 12.9048 2.64629 12.9048 1.81548C12.9048 0.984665 13.5783 0.311157 14.4091 0.311157C15.24 0.311157 15.9135 0.984665 15.9135 1.81548Z"
+                      fill="#56555C" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Folder -->
+          <a href="#">
+            <div class="folder">
+              <div class="folder-top"></div>
+              <div class="folder-body">
+                <div class="folder-header">
+                  <div class="folder-title-icon">
+                    <div></div>
+                  </div>
+                  <p class="folder-title">Self-improvement</p>
+                </div>
+                <div class="folder-footer">
+                  <p>Apr2, 2023</p>
+                  <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.87888 1.81548C3.87888 2.64629 3.20538 3.3198 2.37456 3.3198C1.54375 3.3198 0.870239 2.64629 0.870239 1.81548C0.870239 0.984665 1.54375 0.311157 2.37456 0.311157C3.20538 0.311157 3.87888 0.984665 3.87888 1.81548Z"
+                      fill="#56555C" />
+                    <path
+                      d="M9.89618 1.81548C9.89618 2.64629 9.22267 3.3198 8.39185 3.3198C7.56104 3.3198 6.88753 2.64629 6.88753 1.81548C6.88753 0.984665 7.56104 0.311157 8.39185 0.311157C9.22267 0.311157 9.89618 0.984665 9.89618 1.81548Z"
+                      fill="#56555C" />
+                    <path
+                      d="M15.9135 1.81548C15.9135 2.64629 15.24 3.3198 14.4091 3.3198C13.5783 3.3198 12.9048 2.64629 12.9048 1.81548C12.9048 0.984665 13.5783 0.311157 14.4091 0.311157C15.24 0.311157 15.9135 0.984665 15.9135 1.81548Z"
+                      fill="#56555C" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Folder -->
+          <a href="#">
+            <div class="folder">
+              <div class="folder-top"></div>
+              <div class="folder-body">
+                <div class="folder-header">
+                  <div class="folder-title-icon">
+                    <div></div>
+                  </div>
+                  <p class="folder-title">Web development</p>
+                </div>
+                <div class="folder-footer">
+                  <p>Apr2, 2023</p>
+                  <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.87888 1.81548C3.87888 2.64629 3.20538 3.3198 2.37456 3.3198C1.54375 3.3198 0.870239 2.64629 0.870239 1.81548C0.870239 0.984665 1.54375 0.311157 2.37456 0.311157C3.20538 0.311157 3.87888 0.984665 3.87888 1.81548Z"
+                      fill="#56555C" />
+                    <path
+                      d="M9.89618 1.81548C9.89618 2.64629 9.22267 3.3198 8.39185 3.3198C7.56104 3.3198 6.88753 2.64629 6.88753 1.81548C6.88753 0.984665 7.56104 0.311157 8.39185 0.311157C9.22267 0.311157 9.89618 0.984665 9.89618 1.81548Z"
+                      fill="#56555C" />
+                    <path
+                      d="M15.9135 1.81548C15.9135 2.64629 15.24 3.3198 14.4091 3.3198C13.5783 3.3198 12.9048 2.64629 12.9048 1.81548C12.9048 0.984665 13.5783 0.311157 14.4091 0.311157C15.24 0.311157 15.9135 0.984665 15.9135 1.81548Z"
+                      fill="#56555C" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Folder -->
+          <a href="#">
+            <div class="folder">
+              <div class="folder-top"></div>
+              <div class="folder-body">
+                <div class="folder-header">
+                  <div class="folder-title-icon">
+                    <div></div>
+                  </div>
+                  <p class="folder-title">Team projects</p>
+                </div>
+                <div class="folder-footer">
+                  <p>Apr2, 2023</p>
+                  <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.87888 1.81548C3.87888 2.64629 3.20538 3.3198 2.37456 3.3198C1.54375 3.3198 0.870239 2.64629 0.870239 1.81548C0.870239 0.984665 1.54375 0.311157 2.37456 0.311157C3.20538 0.311157 3.87888 0.984665 3.87888 1.81548Z"
+                      fill="#56555C" />
+                    <path
+                      d="M9.89618 1.81548C9.89618 2.64629 9.22267 3.3198 8.39185 3.3198C7.56104 3.3198 6.88753 2.64629 6.88753 1.81548C6.88753 0.984665 7.56104 0.311157 8.39185 0.311157C9.22267 0.311157 9.89618 0.984665 9.89618 1.81548Z"
+                      fill="#56555C" />
+                    <path
+                      d="M15.9135 1.81548C15.9135 2.64629 15.24 3.3198 14.4091 3.3198C13.5783 3.3198 12.9048 2.64629 12.9048 1.81548C12.9048 0.984665 13.5783 0.311157 14.4091 0.311157C15.24 0.311157 15.9135 0.984665 15.9135 1.81548Z"
+                      fill="#56555C" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Folder -->
+          <a href="#">
+            <div class="folder">
+              <div class="folder-top"></div>
+              <div class="folder-body">
+                <div class="folder-header">
+                  <div class="folder-title-icon">
+                    <div></div>
+                  </div>
+                  <p class="folder-title">Team projects</p>
+                </div>
+                <div class="folder-footer">
+                  <p>Apr2, 2023</p>
+                  <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.87888 1.81548C3.87888 2.64629 3.20538 3.3198 2.37456 3.3198C1.54375 3.3198 0.870239 2.64629 0.870239 1.81548C0.870239 0.984665 1.54375 0.311157 2.37456 0.311157C3.20538 0.311157 3.87888 0.984665 3.87888 1.81548Z"
+                      fill="#56555C" />
+                    <path
+                      d="M9.89618 1.81548C9.89618 2.64629 9.22267 3.3198 8.39185 3.3198C7.56104 3.3198 6.88753 2.64629 6.88753 1.81548C6.88753 0.984665 7.56104 0.311157 8.39185 0.311157C9.22267 0.311157 9.89618 0.984665 9.89618 1.81548Z"
+                      fill="#56555C" />
+                    <path
+                      d="M15.9135 1.81548C15.9135 2.64629 15.24 3.3198 14.4091 3.3198C13.5783 3.3198 12.9048 2.64629 12.9048 1.81548C12.9048 0.984665 13.5783 0.311157 14.4091 0.311157C15.24 0.311157 15.9135 0.984665 15.9135 1.81548Z"
+                      fill="#56555C" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </a>
+
+        </div>
+        <!-- End of recent folders section -->
+
+        <!-- View All button -->
+        <p class="folder-viewall-btn"><a href="#">View All</a></p>
+
+      </div>
+      <!-- End of project section -->
+
+      <!-- Upcoming Tasks section -->
+      <div class="project-section-aside">
+
+        <!-- Upper aside section -->
+        <div class="project-section-aside-title">
+          <div class="aside-title">
+            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.4"
+                d="M9.8705 0.244781H12.2051C13.1719 0.244781 13.9553 1.03482 13.9553 2.00983V4.3641C13.9553 5.33911 13.1719 6.12915 12.2051 6.12915H9.8705C8.90367 6.12915 8.12024 5.33911 8.12024 4.3641V2.00983C8.12024 1.03482 8.90367 0.244781 9.8705 0.244781Z"
+                fill="#56555C" />
+              <path
+                d="M4.2506 8.15004C5.21743 8.15004 6.00086 8.94008 6.00086 9.91508V12.2694C6.00086 13.2437 5.21743 14.0344 4.2506 14.0344H1.91604C0.949198 14.0344 0.165771 13.2437 0.165771 12.2694V9.91508C0.165771 8.94008 0.949198 8.15004 1.91604 8.15004H4.2506ZM12.2051 8.15004C13.172 8.15004 13.9554 8.94008 13.9554 9.91508V12.2694C13.9554 13.2437 13.172 14.0344 12.2051 14.0344H9.87057C8.90373 14.0344 8.12031 13.2437 8.12031 12.2694V9.91508C8.12031 8.94008 8.90373 8.15004 9.87057 8.15004H12.2051ZM4.2506 0.244781C5.21743 0.244781 6.00086 1.03482 6.00086 2.00983V4.3641C6.00086 5.33911 5.21743 6.12915 4.2506 6.12915H1.91604C0.949198 6.12915 0.165771 5.33911 0.165771 4.3641V2.00983C0.165771 1.03482 0.949198 0.244781 1.91604 0.244781H4.2506Z"
+                fill="#56555C" />
+            </svg>
+            <p>Upcoming Tasks</p>
+          </div>
+          <div class="add-task-icon">
+            <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.55271 4.81779H5.09111V7.25805C5.09111 7.65096 4.76981 7.96947 4.37347 7.96947C3.97712 7.96947 3.65582 7.65096 3.65582 7.25805V4.81779H1.19422C0.824523 4.77984 0.543579 4.471 0.543579 4.10255C0.543579 3.73409 0.824523 3.42525 1.19422 3.3873H3.64811V0.954696C3.68639 0.5882 3.99793 0.309692 4.36961 0.309692C4.74129 0.309692 5.05283 0.5882 5.09111 0.954696V3.3873H7.55271C7.92241 3.42525 8.20336 3.73409 8.20336 4.10255C8.20336 4.471 7.92241 4.77984 7.55271 4.81779Z"
+                fill="#262626" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- divider -->
+        <div class="divider"></div>
+
+        <!-- Upcoming task contents -->
+        <div>
+
+          <!-- upcoming task content -->
+          <div class="upcoming-task-content">
+            <div class="upper-content">
+              <input type="checkbox" name="" id="check-task1" onclick="checkTask('task1')">
+              <p id="task1" class="">Create a user flow of social application design</p>
+            </div>
+            <div class="down-content">
+              <div class="content-category">
+                <p class="uxdesign">UXDesign</p>
+                <p class="fintech m-left">FintechLanding</p>
+              </div>
+              <p class="date">May 20, 2020</p>
+            </div>
+          </div>
+
+          <!-- upcoming task content -->
+          <div class="upcoming-task-content">
+            <div class="upper-content">
+              <input type="checkbox" name="" id="check-task2" onclick="checkTask('task2')">
+              <p id="task2" class="">Landing page design for Fintech project of singapore</p>
+            </div>
+            <div class="down-content">
+              <div class="content-category">
+                <p class="landing">FintechLanding</p>
+                <p class="ux m-left">UXDesign</p>
+              </div>
+              <p class="date">May 20, 2020</p>
+            </div>
+          </div>
+
+          <!-- upcoming task content -->
+          <div class="upcoming-task-content">
+            <div class="upper-content">
+              <input type="checkbox" name="" id="check-task3" onclick="checkTask('task3')">
+              <p id="task3" class="">Create a user flow of social application design</p>
+            </div>
+            <div class="down-content">
+              <div class="content-category">
+                <p class="shopping">Shopping</p>
+                <p class="setup m-left">Set-up</p>
+              </div>
+              <p class="date">May 20, 2020</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- down aside section -->
+        <div class="project-section-aside-title aside-t-margin">
+          <div class="aside-title">
+            <div class="aside-title-icon">
+              <svg width="10" height="10" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.54559 2.88188L3.02758 7.42236C2.79261 7.65107 2.4838 7.77887 2.16157 7.77887H0.583955C0.496683 7.77887 0.416124 7.74524 0.355705 7.6847C0.295286 7.62416 0.268433 7.54344 0.268433 7.45599L0.308712 5.86178C0.315425 5.54563 0.442977 5.24965 0.664514 5.02768L3.86673 1.81907C3.92044 1.76525 4.01443 1.76525 4.06813 1.81907L5.19126 2.93771C5.2651 3.01103 5.37252 3.05879 5.48664 3.05879C5.73503 3.05879 5.92972 2.85699 5.92972 2.61483C5.92972 2.49375 5.88272 2.38612 5.80888 2.3054C5.78874 2.27849 4.71932 1.21367 4.71932 1.21367C4.65218 1.1464 4.65218 1.03205 4.71932 0.964781L5.1691 0.507369C5.58533 0.0903171 6.25665 0.0903171 6.67287 0.507369L7.54559 1.38183C7.9551 1.79216 7.9551 2.46482 7.54559 2.88188Z"
+                  fill="#56555C" />
+              </svg>
+            </div>
+            <p>Notes</p>
+          </div>
+          <div class="add-task-icon">
+            <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.55271 4.81779H5.09111V7.25805C5.09111 7.65096 4.76981 7.96947 4.37347 7.96947C3.97712 7.96947 3.65582 7.65096 3.65582 7.25805V4.81779H1.19422C0.824523 4.77984 0.543579 4.471 0.543579 4.10255C0.543579 3.73409 0.824523 3.42525 1.19422 3.3873H3.64811V0.954696C3.68639 0.5882 3.99793 0.309692 4.36961 0.309692C4.74129 0.309692 5.05283 0.5882 5.09111 0.954696V3.3873H7.55271C7.92241 3.42525 8.20336 3.73409 8.20336 4.10255C8.20336 4.471 7.92241 4.77984 7.55271 4.81779Z"
+                fill="#262626" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- divider -->
+        <div class="divider"></div>
+
+        <div>
+
+          <!-- Notes content -->
+          <div class="notes-content">
+            <div class="note-header">
+              <div class="note-header-date">
+                <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.4"
+                    d="M10.7896 5.7615C10.4783 5.7615 10.066 5.75461 9.55259 5.75461C8.30053 5.75461 7.27103 4.71832 7.27103 3.4545V1.23713C7.27103 1.06269 7.13176 0.920654 6.95903 0.920654H3.31208C1.61013 0.920654 0.234497 2.31754 0.234497 4.02952V11.4587C0.234497 13.2548 1.67566 14.7103 3.45408 14.7103H8.88491C10.5807 14.7103 11.9557 13.3223 11.9557 11.609V6.07177C11.9557 5.89664 11.8171 5.75529 11.6437 5.75598C11.3522 5.75805 11.0026 5.7615 10.7896 5.7615Z"
+                    fill="#56555C" />
+                  <path opacity="0.4"
+                    d="M8.91091 1.31187C8.70476 1.09744 8.34485 1.24499 8.34485 1.54215V3.36032C8.34485 4.12288 8.97297 4.75031 9.73553 4.75031C10.2161 4.75583 10.8835 4.75721 11.4503 4.75583C11.7405 4.75514 11.8881 4.40833 11.6868 4.19873C10.9594 3.44236 9.65693 2.08684 8.91091 1.31187Z"
+                    fill="#56555C" />
+                  <path
+                    d="M7.76231 9.80998C8.04568 9.80998 8.27597 10.0403 8.27597 10.3236C8.27597 10.607 8.04568 10.8366 7.76231 10.8366H4.00877C3.72539 10.8366 3.4958 10.607 3.4958 10.3236C3.4958 10.0403 3.72539 9.80998 4.00877 9.80998H7.76231ZM6.3426 6.36658C6.62597 6.36658 6.85626 6.59686 6.85626 6.88024C6.85626 7.16362 6.62597 7.39321 6.3426 7.39321H4.0087C3.72532 7.39321 3.49573 7.16362 3.49573 6.88024C3.49573 6.59686 3.72532 6.36658 4.0087 6.36658H6.3426Z"
+                    fill="#56555C" />
+                </svg>
+                <p>Apr 2, 2023</p>
+              </div>
+              <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M3.87888 1.81548C3.87888 2.64629 3.20538 3.3198 2.37456 3.3198C1.54375 3.3198 0.870239 2.64629 0.870239 1.81548C0.870239 0.984665 1.54375 0.311157 2.37456 0.311157C3.20538 0.311157 3.87888 0.984665 3.87888 1.81548Z"
+                  fill="#56555C" />
+                <path
+                  d="M9.89618 1.81548C9.89618 2.64629 9.22267 3.3198 8.39185 3.3198C7.56104 3.3198 6.88753 2.64629 6.88753 1.81548C6.88753 0.984665 7.56104 0.311157 8.39185 0.311157C9.22267 0.311157 9.89618 0.984665 9.89618 1.81548Z"
+                  fill="#56555C" />
+                <path
+                  d="M15.9135 1.81548C15.9135 2.64629 15.24 3.3198 14.4091 3.3198C13.5783 3.3198 12.9048 2.64629 12.9048 1.81548C12.9048 0.984665 13.5783 0.311157 14.4091 0.311157C15.24 0.311157 15.9135 0.984665 15.9135 1.81548Z"
+                  fill="#56555C" />
+              </svg>
+            </div>
+            <p class="note-title">ChatGPT Tricks for business marketing</p>
+            <p class="note-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id dui mi. Fusce varius
+              bibendum ante, non lacinia. Fall usasc ce variu slorem ipsum dolor sit amet</p>
+            <div class="down-content">
+              <div class="content-category">
+                <p class="ux">Tech</p>
+                <p class="setup m-left">Ai</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Notes content -->
+          <div class="notes-content">
+            <div class="note-header">
+              <div class="note-header-date">
+                <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.4"
+                    d="M10.7896 5.7615C10.4783 5.7615 10.066 5.75461 9.55259 5.75461C8.30053 5.75461 7.27103 4.71832 7.27103 3.4545V1.23713C7.27103 1.06269 7.13176 0.920654 6.95903 0.920654H3.31208C1.61013 0.920654 0.234497 2.31754 0.234497 4.02952V11.4587C0.234497 13.2548 1.67566 14.7103 3.45408 14.7103H8.88491C10.5807 14.7103 11.9557 13.3223 11.9557 11.609V6.07177C11.9557 5.89664 11.8171 5.75529 11.6437 5.75598C11.3522 5.75805 11.0026 5.7615 10.7896 5.7615Z"
+                    fill="#56555C" />
+                  <path opacity="0.4"
+                    d="M8.91091 1.31187C8.70476 1.09744 8.34485 1.24499 8.34485 1.54215V3.36032C8.34485 4.12288 8.97297 4.75031 9.73553 4.75031C10.2161 4.75583 10.8835 4.75721 11.4503 4.75583C11.7405 4.75514 11.8881 4.40833 11.6868 4.19873C10.9594 3.44236 9.65693 2.08684 8.91091 1.31187Z"
+                    fill="#56555C" />
+                  <path
+                    d="M7.76231 9.80998C8.04568 9.80998 8.27597 10.0403 8.27597 10.3236C8.27597 10.607 8.04568 10.8366 7.76231 10.8366H4.00877C3.72539 10.8366 3.4958 10.607 3.4958 10.3236C3.4958 10.0403 3.72539 9.80998 4.00877 9.80998H7.76231ZM6.3426 6.36658C6.62597 6.36658 6.85626 6.59686 6.85626 6.88024C6.85626 7.16362 6.62597 7.39321 6.3426 7.39321H4.0087C3.72532 7.39321 3.49573 7.16362 3.49573 6.88024C3.49573 6.59686 3.72532 6.36658 4.0087 6.36658H6.3426Z"
+                    fill="#56555C" />
+                </svg>
+                <p>Apr 2, 2023</p>
+              </div>
+              <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M3.87888 1.81548C3.87888 2.64629 3.20538 3.3198 2.37456 3.3198C1.54375 3.3198 0.870239 2.64629 0.870239 1.81548C0.870239 0.984665 1.54375 0.311157 2.37456 0.311157C3.20538 0.311157 3.87888 0.984665 3.87888 1.81548Z"
+                  fill="#56555C" />
+                <path
+                  d="M9.89618 1.81548C9.89618 2.64629 9.22267 3.3198 8.39185 3.3198C7.56104 3.3198 6.88753 2.64629 6.88753 1.81548C6.88753 0.984665 7.56104 0.311157 8.39185 0.311157C9.22267 0.311157 9.89618 0.984665 9.89618 1.81548Z"
+                  fill="#56555C" />
+                <path
+                  d="M15.9135 1.81548C15.9135 2.64629 15.24 3.3198 14.4091 3.3198C13.5783 3.3198 12.9048 2.64629 12.9048 1.81548C12.9048 0.984665 13.5783 0.311157 14.4091 0.311157C15.24 0.311157 15.9135 0.984665 15.9135 1.81548Z"
+                  fill="#56555C" />
+              </svg>
+            </div>
+            <p class="note-title">Notes on being a successful entrepreneur </p>
+            <p class="note-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id dui mi. Fusce varius
+              bibendum ante, non lacinia. Fall usasc ce variu slorem ipsum dolor sit amet</p>
+            <div class="down-content">
+              <div class="content-category">
+                <p class="fintech">Leaning</p>
+                <p class="shopping m-left">Self-improvement</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Notes content -->
+          <div class="notes-content">
+            <div class="note-header">
+              <div class="note-header-date">
+                <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.4"
+                    d="M10.7896 5.7615C10.4783 5.7615 10.066 5.75461 9.55259 5.75461C8.30053 5.75461 7.27103 4.71832 7.27103 3.4545V1.23713C7.27103 1.06269 7.13176 0.920654 6.95903 0.920654H3.31208C1.61013 0.920654 0.234497 2.31754 0.234497 4.02952V11.4587C0.234497 13.2548 1.67566 14.7103 3.45408 14.7103H8.88491C10.5807 14.7103 11.9557 13.3223 11.9557 11.609V6.07177C11.9557 5.89664 11.8171 5.75529 11.6437 5.75598C11.3522 5.75805 11.0026 5.7615 10.7896 5.7615Z"
+                    fill="#56555C" />
+                  <path opacity="0.4"
+                    d="M8.91091 1.31187C8.70476 1.09744 8.34485 1.24499 8.34485 1.54215V3.36032C8.34485 4.12288 8.97297 4.75031 9.73553 4.75031C10.2161 4.75583 10.8835 4.75721 11.4503 4.75583C11.7405 4.75514 11.8881 4.40833 11.6868 4.19873C10.9594 3.44236 9.65693 2.08684 8.91091 1.31187Z"
+                    fill="#56555C" />
+                  <path
+                    d="M7.76231 9.80998C8.04568 9.80998 8.27597 10.0403 8.27597 10.3236C8.27597 10.607 8.04568 10.8366 7.76231 10.8366H4.00877C3.72539 10.8366 3.4958 10.607 3.4958 10.3236C3.4958 10.0403 3.72539 9.80998 4.00877 9.80998H7.76231ZM6.3426 6.36658C6.62597 6.36658 6.85626 6.59686 6.85626 6.88024C6.85626 7.16362 6.62597 7.39321 6.3426 7.39321H4.0087C3.72532 7.39321 3.49573 7.16362 3.49573 6.88024C3.49573 6.59686 3.72532 6.36658 4.0087 6.36658H6.3426Z"
+                    fill="#56555C" />
+                </svg>
+                <p>Apr 2, 2023</p>
+              </div>
+              <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M3.87888 1.81548C3.87888 2.64629 3.20538 3.3198 2.37456 3.3198C1.54375 3.3198 0.870239 2.64629 0.870239 1.81548C0.870239 0.984665 1.54375 0.311157 2.37456 0.311157C3.20538 0.311157 3.87888 0.984665 3.87888 1.81548Z"
+                  fill="#56555C" />
+                <path
+                  d="M9.89618 1.81548C9.89618 2.64629 9.22267 3.3198 8.39185 3.3198C7.56104 3.3198 6.88753 2.64629 6.88753 1.81548C6.88753 0.984665 7.56104 0.311157 8.39185 0.311157C9.22267 0.311157 9.89618 0.984665 9.89618 1.81548Z"
+                  fill="#56555C" />
+                <path
+                  d="M15.9135 1.81548C15.9135 2.64629 15.24 3.3198 14.4091 3.3198C13.5783 3.3198 12.9048 2.64629 12.9048 1.81548C12.9048 0.984665 13.5783 0.311157 14.4091 0.311157C15.24 0.311157 15.9135 0.984665 15.9135 1.81548Z"
+                  fill="#56555C" />
+              </svg>
+            </div>
+            <p class="note-title">What are my life Goals and what I’m currently doing to acheive them</p>
+            <p class="note-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id dui mi. Fusce varius
+              bibendum ante, non lacinia. Fall usasc ce variu slorem ipsum dolor sit amet</p>
+            <div class="down-content">
+              <div class="content-category">
+                <p class="ux">Profitable</p>
+                <p class="shopping m-left">1person</p>
+                <p class="setup m-left">Ai</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- End of upcomming task section -->
+
+    </section>
+
 
   </section>
 
