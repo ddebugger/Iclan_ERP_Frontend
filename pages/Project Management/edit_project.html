@@ -7,7 +7,8 @@
 
     <link rel="stylesheet" href="../../dist/css/edit_project.css" />
     <link rel="stylesheet" href="../../dist/css/select-module.css" />
-    <link rel="stylesheet" href="../../dist/css/dashboard.css">
+    <link rel="stylesheet" href="../../dist/css/dashboard.css" />
+    <link rel="stylesheet" href="../../dist/css/edit_task.css" />
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
@@ -338,12 +339,10 @@
       </nav>
       <!-- End of Navigation------------------------------ ------------>
 
-
       <!------------------------- links section ----------------------->
       <div class="link-section">
-
         <div class="link-section-back-btn">
-          <img src="../../assets/images/Icon.svg" alt="link">
+          <img src="../../assets/images/Icon.svg" alt="link" />
         </div>
 
         <ul class="links" id="links">
@@ -359,10 +358,8 @@
             <a href="#">Creatn Sync Hub</a>
           </li>
         </ul>
-
       </div>
       <!---------------------end of link section  -------------------->
-
 
       <!---------- main Section -------------------------------- -->
       <div class="main">
@@ -399,26 +396,40 @@
 
         <div class="main-cta">
           <ul class="tabs" id="menu">
-            <li class="tabs-item tablinks"  onclick="openTab(event, 'Discussion')">
+            <li
+              class="tabs-item tablinks"
+              onclick="openTab(event, 'Discussion')"
+            >
               <a href="#">
                 <span class="item_name">Discussion</span>
               </a>
             </li>
-            <li class="tabs-item tablinks active-item" onclick="openTab(event, 'Taks')">
+
+            <li
+              class="tabs-item tablinks active-item"
+              onclick="openTab(event, 'Taks')"
+              id="tasks"
+            >
               <a href="#">
                 <span class="item_name">Tasks</span>
               </a>
             </li>
-            <li class="tabs-item tablinks" onclick="openTab(event, 'Timelines')">
+
+            <li
+              class="tabs-item tablinks"
+              onclick="openTab(event, 'Timelines')"
+            >
               <a href="#">
                 <span class="item_name">Timelines</span>
               </a>
             </li>
+
             <li class="tabs-item tablinks" onclick="openTab(event, 'Files')">
               <a href="#">
                 <span class="item_name">Files</span>
               </a>
             </li>
+
             <li class="tabs-item tablinks" onclick="openTab(event, 'Overview')">
               <a href="#">
                 <span class="item_name">Overview</span>
@@ -426,18 +437,16 @@
             </li>
           </ul>
 
-          <div class="icons">
-            <img src="../../assets/images/icons.svg" alt="star-icon" />
-            <img src="../../assets/images/icons (1).svg" alt="doted-icon" />
+          <div class="main-cta-icons">
+            <img src="../../assets/images/Frame 55.svg" alt="star-icon" />
+            <img src="../../assets/images/Frame 56.svg" alt="doted-icon" />
           </div>
         </div>
       </div>
       <!-- -------------end of mainoverview section  ----------------------->
 
-
       <!-------------------- Board section ----------------------------->
       <div class="board-section">
-
         <div class="board-section-header">
           <div class="header-left">
             <div class="header-element-name">
@@ -474,7 +483,7 @@
                 <h2>TO DO</h2>
                 <div class="counter">3</div>
               </div>
-              <div class="add-icon">
+              <div class="add-icon" id="openModalBtn">
                 <img src=".././../assets/images/icons (8).svg" alt="img" />
               </div>
             </div>
@@ -498,7 +507,7 @@
               </h1>
 
               <div class="board-img">
-                <img src="../../assets/images/Rectangle 1.svg" alt=""/>
+                <img src="../../assets/images/Rectangle 1.svg" alt="" />
               </div>
 
               <div class="board-element-footer">
@@ -518,7 +527,6 @@
                   <img src="../../assets/images/Frame 91.svg" alt="" />
                 </div>
               </div>
-
             </div>
             <!-- each board element -->
             <div class="board-element" draggable="true">
@@ -531,9 +539,7 @@
                 </div>
               </div>
 
-              <h1 class="board-element-title">
-                Do wireframe of same product
-              </h1>
+              <h1 class="board-element-title">Do wireframe of same product</h1>
 
               <div class="board-element-footer">
                 <div class="board-element-footer-icons">
@@ -552,7 +558,6 @@
                   <img src="../../assets/images/Frame 91.svg" alt="" />
                 </div>
               </div>
-
             </div>
             <!-- each board element -->
             <div class="board-element" draggable="true">
@@ -565,12 +570,10 @@
                 </div>
               </div>
 
-              <h1 class="board-element-title">
-                Best UI design of product
-              </h1>
+              <h1 class="board-element-title">Best UI design of product</h1>
 
               <div class="board-img">
-                <img src="../../assets/images/Rectangle 1 (1).svg" alt=""/>
+                <img src="../../assets/images/Rectangle 1 (1).svg" alt="" />
               </div>
 
               <div class="board-element-footer">
@@ -590,9 +593,7 @@
                   <img src="../../assets/images/Frame 91.svg" alt="" />
                 </div>
               </div>
-
             </div>
-
           </div>
 
           <!-- one board -->
@@ -626,7 +627,7 @@
               </h1>
 
               <div class="board-img">
-                <img src="../../assets/images/Rectangle 1 (2).svg" alt=""/>
+                <img src="../../assets/images/Rectangle 1 (2).svg" alt="" />
               </div>
 
               <div class="board-element-footer">
@@ -646,7 +647,6 @@
                   <img src="../../assets/images/Frame 91.svg" alt="" />
                 </div>
               </div>
-
             </div>
             <!-- each board element -->
             <div class="board-element" draggable="true">
@@ -664,7 +664,7 @@
               </h1>
 
               <div class="board-img">
-                <img src="../../assets/images/Rectangle 1 (3).svg" alt=""/>
+                <img src="../../assets/images/Rectangle 1 (3).svg" alt="" />
               </div>
 
               <div class="board-element-footer">
@@ -684,7 +684,6 @@
                   <img src="../../assets/images/Frame 91.svg" alt="" />
                 </div>
               </div>
-
             </div>
             <!-- each board element -->
             <div class="board-element" draggable="true">
@@ -702,7 +701,7 @@
               </h1>
 
               <div class="board-img">
-                <img src="../../assets/images/Rectangle 1.svg" alt=""/>
+                <img src="../../assets/images/Rectangle 1.svg" alt="" />
               </div>
 
               <div class="board-element-footer">
@@ -722,9 +721,7 @@
                   <img src="../../assets/images/Frame 91.svg" alt="" />
                 </div>
               </div>
-
             </div>
-
           </div>
 
           <!-- one board -->
@@ -753,12 +750,10 @@
                 </div>
               </div>
 
-              <h1 class="board-element-title">
-                Done Planning of projects
-              </h1>
+              <h1 class="board-element-title">Done Planning of projects</h1>
 
               <div class="board-img">
-                <img src="../../assets/images/Rectangle 1.svg" alt=""/>
+                <img src="../../assets/images/Rectangle 1.svg" alt="" />
               </div>
 
               <div class="board-element-footer">
@@ -778,7 +773,6 @@
                   <img src="../../assets/images/Frame 91.svg" alt="" />
                 </div>
               </div>
-
             </div>
             <!-- each board element -->
             <div class="board-element" draggable="true">
@@ -791,9 +785,7 @@
                 </div>
               </div>
 
-              <h1 class="board-element-title">
-                Second design concept
-              </h1>
+              <h1 class="board-element-title">Second design concept</h1>
 
               <div class="board-element-footer">
                 <div class="board-element-footer-icons">
@@ -812,7 +804,6 @@
                   <img src="../../assets/images/Frame 91.svg" alt="" />
                 </div>
               </div>
-
             </div>
             <!-- each board element -->
             <div class="board-element" draggable="true">
@@ -825,9 +816,7 @@
                 </div>
               </div>
 
-              <h1 class="board-element-title">
-                Best UI design of product
-              </h1>
+              <h1 class="board-element-title">Best UI design of product</h1>
 
               <div class="board-element-footer">
                 <div class="board-element-footer-icons">
@@ -846,9 +835,7 @@
                   <img src="../../assets/images/Frame 91.svg" alt="" />
                 </div>
               </div>
-
             </div>
-
           </div>
 
           <!-- one board -->
@@ -882,7 +869,7 @@
               </h1>
 
               <div class="board-img">
-                <img src="../../assets/images/Rectangle 1 (2).svg" alt=""/>
+                <img src="../../assets/images/Rectangle 1 (2).svg" alt="" />
               </div>
 
               <div class="board-element-footer">
@@ -902,7 +889,6 @@
                   <img src="../../assets/images/Frame 91.svg" alt="" />
                 </div>
               </div>
-
             </div>
             <!-- each board element -->
             <div class="board-element" draggable="true">
@@ -920,7 +906,7 @@
               </h1>
 
               <div class="board-img">
-                <img src="../../assets/images/Rectangle 1 (3).svg" alt=""/>
+                <img src="../../assets/images/Rectangle 1 (3).svg" alt="" />
               </div>
 
               <div class="board-element-footer">
@@ -940,7 +926,6 @@
                   <img src="../../assets/images/Frame 91.svg" alt="" />
                 </div>
               </div>
-
             </div>
             <!-- each board element -->
             <div class="board-element" draggable="true">
@@ -958,7 +943,7 @@
               </h1>
 
               <div class="board-img">
-                <img src="../../assets/images/Rectangle 1.svg" alt=""/>
+                <img src="../../assets/images/Rectangle 1.svg" alt="" />
               </div>
 
               <div class="board-element-footer">
@@ -978,11 +963,8 @@
                   <img src="../../assets/images/Frame 91.svg" alt="" />
                 </div>
               </div>
-
             </div>
-
           </div>
-
         </div>
 
         <!-- discusion section content -->
@@ -1007,12 +989,209 @@
         <div id="Overview" class="overview-section-content tabcontent">
           <h1>Something to overview</h1>
         </div>
-
       </div>
       <!-- -------------end of Board section-------------------- -->
     </section>
 
+    <!----------------------- modal section popup ----------------->
+    <!-- Overlay Here -->
+    <div class="edit-task-bg" id="overlay"></div>
+
+    <main class="edit-task-main">
+      <!-- ---------Main Section Here --------->
+      <section class="edit-task-modal" id="modal">
+        <!------------ Top Modal Region ------------->
+        <div class="top-modal">
+          <!-- Left Section -->
+          <div class="left-div">
+            <a href="#">
+              <img
+                src="../../assets/icons/arrow_left.svg"
+                class="close"
+                alt="arrow-left"
+              />
+            </a>
+            <b class="modal-title">CreateSync Hub</b>
+          </div>
+          <!-- End of Left Section ---->
+
+          <!-- Right Section -->
+          <div class="right-div">
+            <a href="#">
+              <img src="../../assets/icons/share.svg" alt="arrow-left" />
+            </a>
+            <a href="#">
+              <img src="../../assets/icons/edit_.svg" alt="arrow-left" />
+            </a>
+          </div>
+          <!-- End of Right Section ------>
+        </div>
+        <!-- -------End of Top Region------------->
+
+        <!-------------- Modal Text Section -------------->
+        <section class="text-section">
+          <div class="ux-labels-cover">
+            <!-- UX Labels -->
+            <div class="ux-design-label">UX Design</div>
+            <div class="ux-reserach-label">UX Research</div>
+          </div>
+
+          <div class="task-summary">
+            <textarea class="title-text" name="" id="">
+Overall UX Process of full product for first version   </textarea
+            >
+
+            <textarea class="task-text" name="" id="">
+ Create overall ux process of full product include user personas, sitemap, information architecture, user flow  mindmap for our client to show research process and accurate results.
+                     </textarea
+            >
+          </div>
+        </section>
+        <!-------------- End of Modal Text Section -------------->
+
+        <!-- Created By -->
+        <div class="created-by">
+          <p class="grey-text">Created By</p>
+          <div class="div-flex">
+            <a href="#">
+              <img src="../../assets/images/male_tasker.svg" alt="img" />
+            </a>
+            <p>Herman Lan</p>
+          </div>
+        </div>
+
+        <!-- Assigned to -->
+        <div class="assigned-to">
+          <p class="grey-text">
+            Assigned <br />
+            To
+          </p>
+          <div class="assigned-people">
+            <div class="div-flex">
+              <a href="#">
+                <img src="../../assets/images/male_tasker.svg" alt="img" />
+              </a>
+              <p>Keylan Arm</p>
+            </div>
+
+            <div class="div-flex">
+              <a href="#">
+                <img src="../../assets/images/female_tasker.svg" alt="img" />
+              </a>
+              <p>Merly Mile</p>
+            </div>
+
+            <a href="#">
+              <img src="../../assets/icons/add_tasks.svg" alt="add_tasks" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline">
+          <p class="grey-text">Timeline</p>
+          <p>Jan 3, 2024 to Apr 24, 2024</p>
+        </div>
+
+        <!-- Status -->
+        <div class="task-status">
+          <p class="grey-text">Status</p>
+          <div class="status-label">
+            <div class="status-dot"></div>
+            TO DO
+          </div>
+        </div>
+
+        <!------ Task Images ---->
+        <div class="images-div">
+          <a href="#">
+            <img src="../../assets/images/task_image1.svg" alt="task_image" />
+          </a>
+
+          <a href="#">
+            <img src="../../assets/images/task_image2.svg" alt="task-image" />
+          </a>
+        </div>
+
+        <!---------- To Do Section -------->
+        <div class="todo-section">
+          <b>To Do:</b>
+          <!-- Sub Tasks -->
+          <div class="sub-tasks-cover">
+            <div class="sub-tasks">
+              <div class="icon-text-div">
+                <img src="../../assets/icons/tasks.svg" alt="" />
+                <b>Sub Tasks</b>
+              </div>
+
+              <div><span>6</span> / <span>12</span></div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+
+            <!-------------- Check Boxes  Section ------------->
+            <div class="checkbox-text-cover">
+              <!-- Checkbox and text -->
+              <div class="checkbox-text">
+                <input type="checkbox" class="checkbox" id="checkbox" />
+                <label for="checkbox" class="checkbox-label"></label>
+                <textarea name="" id="" cols="30" rows="10">
+Primary Research</textarea
+                >
+              </div>
+
+              <!-- Checkbox and text -->
+              <div class="checkbox-text">
+                <input type="checkbox" class="checkbox" id="checkbox2" />
+                <label for="checkbox2" class="checkbox-label"></label>
+                <textarea name="" id="" cols="30" rows="10">
+User Personas</textarea
+                >
+              </div>
+
+              <!-- Checkbox and text -->
+              <div class="checkbox-text" id="checkbox-text">
+                <input type="checkbox" class="checkbox" id="checkbox3" />
+                <label for="checkbox3" class="checkbox-label"></label>
+                <textarea name="" id="" cols="30" rows="10">Site Map</textarea>
+              </div>
+
+              <!-- Checkbox and text -->
+              <div class="checkbox-text">
+                <input type="checkbox" class="checkbox" id="checkbox4" />
+                <label for="checkbox4" class="checkbox-label"></label>
+                <textarea name="" id="" cols="30" rows="10">
+Information Architecture</textarea
+                >
+              </div>
+            </div>
+            <!-------------- End Of Check Boxes  Section ------------->
+
+            <!-- See All  -->
+            <div class="see-all">
+              <a href="#"> See All</a>
+            </div>
+
+            <!--------------- Add New SubTask  Region ------------->
+            <div class="add-subtask">
+              <button id="addSubtaskBtn">
+                <span class="plus">+</span> Add New Subtask
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!------------------end modal section popup ----------------->
+
     <script src="../../dist/js/edit_project.js"></script>
     <script src="../../dist/js/dasboard.js"></script>
+    <script src="../../dist/js/edit_task.js"></script>
+    <script>
+      document.getElementById("tasks").click();
+    </script>
   </body>
 </html>

@@ -234,6 +234,10 @@
   color: #333333;
 }
 
+.main-cta .tabs .tabs-item .item_name {
+  font-size: 20px;
+}
+
 .main-cta .tabs .active-item a span {
   color: var(--thinkYellow);
 }
