@@ -1,10 +1,8 @@
 /* Google Font Link */
 @font-face {
   font-family: "DMSans";
-  src: url("../../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf")
-    format("ttf-variations");
-  src: url("../../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf")
-    format("truetype");
+  src: url("../../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf") format("ttf-variations");
+  src: url("../../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf") format("truetype");
   font-weight: 100 1000;
   font-stretch: 25% 151%;
 }
@@ -59,7 +57,7 @@
   padding: 1rem 2rem;
 }
 
-.sidebar.open ~ .home-section {
+.sidebar.open~.home-section {
   left: 250px;
   width: calc(100% - 250px);
 }
@@ -73,7 +71,7 @@
 }
 
 @media (max-width: 560px) {
-  .sidebar.open ~ .home-section {
+  .sidebar.open~.home-section {
     left: 78px;
     width: calc(100% - 78px);
   }
@@ -230,7 +228,8 @@
   color: #333333;
   font-weight: 300;
   line-height: 15px;
-  font-family: "Montserrat"; /* subtext/500 */
+  font-family: "Montserrat";
+  /* subtext/500 */
   color: #333333;
 }
 
@@ -441,7 +440,6 @@
   grid-gap: 10px;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  /* border: 2px solid red; */
 }
 
 .board-section-content::-webkit-scrollbar {
@@ -617,6 +615,7 @@
 /* ----------------- Responsiveness for the board section-------------- */
 
 @media screen and (max-width: 715px) {
+
   .board-section-header .header-element-filter,
   .board-section-header .header-element-name {
     display: none;
