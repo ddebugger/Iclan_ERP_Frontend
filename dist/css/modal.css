@@ -1,0 +1,507 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #f1f0ec;
+  margin: 15% auto;
+  border-radius: 23px;
+  border: 1px solid #888;
+  width: 80%;
+  animation-name: modalAnim;
+  animation-duration: 0.4s;
+}
+
+@keyframes modalAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content .modal-content-header {
+  display: flex;
+  gap: 2rem;
+  padding: 25px 25px 2px 25px;
+}
+
+.modal-content-header .header {
+  display: flex;
+  gap: 1.3rem;
+}
+
+.modal-content-header img {
+  height: 27px;
+  width: 27px;
+  margin: auto;
+}
+
+.modal-content-header .title {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #26252b;
+}
+
+.modal-content-header .line {
+  border-bottom: 1.05711px solid #000000;
+  height: 1.7px;
+  width: 70%;
+  margin: auto 0 auto 0;
+}
+
+.modal-content .d-line {
+  border-bottom: 1.05711px solid #000000;
+  height: 1.7px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.project-info {
+  display: flex;
+  margin: auto;
+  width: 93%;
+  /* padding: 1rem; */
+  gap: 1rem;
+  /* border: 1px solid red; */
+}
+
+.project-info .left {
+  flex-basis: 50%;
+  /* border: 1px solid green; */
+  padding: 12px;
+}
+
+.left .input-div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.left .input-div input {
+  width: 100%;
+  padding: 7px;
+  margin: 3px 0;
+  box-sizing: border-box;
+  border: 0.528557px solid #262626;
+  border-radius: 5px;
+  color: #9ba5b7;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+}
+
+.left .input-div input:focus {
+  outline: none;
+}
+
+.left .input-div textarea {
+  width: 100%;
+  height: 100px;
+  padding: 7px;
+  box-sizing: border-box;
+  border: 0.528557px solid #262626;
+  border-radius: 5px;
+  resize: none;
+  color: #9ba5b7;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+  margin: 3px 0;
+}
+
+.left .input-div textarea:focus {
+  outline: none;
+}
+
+.left .assigned-to {
+  display: flex;
+  gap: 1rem;
+}
+
+.left .assigned-to p {
+  color: #5a5a5a;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 23px;
+}
+
+.left .assigned-to img {
+  cursor: pointer;
+}
+
+.left .tags-section,
+.tags-section .tags,
+.tags .tag {
+  display: flex;
+}
+
+.tags-section .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tags .tag {
+  padding: 12px;
+  gap: 5px;
+  background: rgba(161, 161, 161, 0.3);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9px;
+  margin: auto;
+}
+
+.tags .yellow {
+  background: rgba(239, 165, 16, 0.28);
+}
+
+.tags img {
+  height: 35px;
+  width: 35px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.tags .tag p {
+  font-size: 13px;
+}
+
+.tags .tag svg {
+  cursor: pointer;
+}
+
+/* right section */
+.project-info .right {
+  flex-basis: 60%;
+}
+
+.right .top,
+.right .bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  background: #e7e7e4;
+  border-radius: 16.9138px;
+  margin-bottom: 1rem;
+}
+
+/* ------top--- */
+.top .text {
+  line-height: 1px;
+  margin-bottom: 5px;
+}
+
+.top .text h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #0b0b0b;
+}
+
+.top .text p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #6d6d6d;
+}
+
+.top .upload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #efa510;
+  margin: auto;
+  line-height: 1px;
+  padding: 10px;
+  width: 95%;
+  border-radius: 15px;
+}
+
+.top .upload svg {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 7px;
+  cursor: pointer;
+}
+
+.top .upload h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #0b0b0b;
+}
+
+.top .upload a {
+  color: #efa510;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.top .upload p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+
+  color: #6d6d6d;
+}
+
+/* -----bottom------- */
+.right .bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  align-items: center;
+}
+
+/* .bottom .text {
+  line-height: 1px;
+  margin-bottom: 5px;
+} */
+
+.bottom .text h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #0b0b0b;
+}
+
+.bottom .text p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #6d6d6d;
+}
+
+.bottom .upload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #efa510;
+  margin: auto;
+  line-height: 1px auto;
+  padding: 10px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+
+.bottom .upload svg {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 7px;
+  cursor: pointer;
+}
+
+.bottom .upload h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #0b0b0b;
+  text-align: center;
+}
+
+.bottom .upload a {
+  color: #efa510;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.bottom .upload p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+
+  color: #6d6d6d;
+}
+
+.right .button-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.right .button-div a {
+  text-decoration: none;
+  display: flex;
+  border: 1.61967px solid #efa510;
+  border-radius: 4.85902px;
+  cursor: pointer;
+  /* padding: 8px; */
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  color: #efa510;
+  justify-content: center;
+}
+
+.right .button-div a:hover {
+  background-color: #efa510;
+  color: #fff;
+}
+
+.right .button-div a svg {
+  color: #fff;
+  height: 20px;
+  width: 20px;
+}
+
+.right .button-div p {
+}
+
+/* .right .button-div button {
+  border: 1.61967px solid #efa510;
+  border-radius: 4.85902px;
+  cursor: pointer;
+  padding: 12px;
+  width: 100%;
+  color: #efa510;
+} */
+
+/* Modal buttons */
+.modal button {
+  float: right;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal button:hover {
+  background-color: #ddd;
+}
+
+/* Open modal button */
+#open-modal {
+  padding: 10px 20px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Close Modal button */
+#close-modal {
+  background-color: #ccc;
+}
+
+/* --------------Responsiveness ----------------- */
+@media screen and (max-width: 1070px) {
+  .modal-content-header .title {
+    font-size: 15px;
+  }
+
+  .bottom .text h1 {
+    font-size: 15px;
+  }
+
+  .bottom .text p {
+    font-size: 10px;
+  }
+
+  .bottom .upload {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+  }
+
+  .bottom .upload svg {
+    height: 40px;
+    width: 40px;
+  }
+
+  .bottom .upload h1 {
+    font-size: 13px;
+  }
+
+  .bottom .upload p {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .modal-content-header .title {
+    font-size: 13px;
+  }
+
+  .bottom .upload {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+  }
+
+  .bottom .upload svg {
+    height: 30px;
+    width: 30px;
+  }
+
+  .bottom .upload h1 {
+    font-size: 11px;
+  }
+
+  .bottom .upload p {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 976px) {
+  .project-info {
+    display: block;
+  }
+
+  .project-info .right .bottom {
+    display: none;
+  }
+
+  .modal-content-header img {
+    height: 20px;
+    width: 20px;
+  }
+
+  .right .button-div {
+    display: block;
+  }
+
+  .right .button-div a {
+    margin-bottom: 1rem;
+  }
+}

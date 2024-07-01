@@ -1,0 +1,435 @@
+:root {
+  --textlightDarkColor: #383738;
+  --greenishYellow: #b17908;
+  --folderBackgroundColor: #f1f0ec;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* project section */
+.project-section-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.project-section {
+  width: 77%;
+  height: 100vh;
+  margin-right: 1rem;
+}
+
+.project-section-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.project-section-header-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.project-section-header {
+  display: flex;
+  align-items: center;
+}
+
+.project-header-title {
+  font-size: 15px;
+  color: #26252b;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.project-section-search {
+  width: 40%;
+  height: 30px;
+  border: 1px solid #9ba5b7;
+  border-radius: 5px;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.project-section-search svg {
+  margin-left: 8px;
+  color: #545f71;
+}
+
+.project-section-search input[type="text"] {
+  background-color: transparent;
+  border: none;
+  flex: 1;
+  height: inherit;
+  padding: 0 8px;
+}
+
+.project-section-search input[type="text"]:focus {
+  outline: none;
+}
+
+.project-section-search input::placeholder {
+  color: #9ba5b7;
+}
+
+.project-header-line {
+  width: 50%;
+  height: 1px;
+  background-color: var(--blackColor);
+  margin: 0 10px;
+}
+
+.project-header-add-icon {
+  background-color: var(--goldishYellowColor);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.project-cards {
+  width: 100%;
+  height: 480px;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  gap: 20px;
+  /* grid-template-columns: repeat(4, 1fr); */
+  overflow-y: scroll;
+}
+
+.project-cards::-webkit-scrollbar {
+  height: 0.3rem;
+  width: 0.3rem;
+}
+
+.project-cards::-webkit-scrollbar-thumb {
+  background-color: #f1f0ec;
+  border-radius: 24px;
+}
+
+.project-card {
+  background-color: #f1f0ec;
+  min-width: 197px;
+  height: 182px;
+  border-radius: 8px;
+  flex-grow: 1;
+}
+
+.project-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 8px 0;
+}
+
+.project-content {
+  display: flex;
+  padding: 0 12px;
+}
+
+.project-info {
+  margin-left: 5px;
+  width: 100%;
+}
+
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.project-title p {
+  color: #26252b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.project-card .project-dis {
+  font-size: 10px;
+  color: #56555c;
+}
+
+.down-content-extra-magin {
+  padding: 0 12px;
+  margin-top: 5px !important;
+}
+
+.folder-header-margin {
+  margin: 3rem 0 0.5rem 0;
+}
+
+.recent-folders {
+  width: 100%;
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  overflow-x: scroll;
+  padding: 0.5rem 0;
+}
+
+.recent-folders::-webkit-scrollbar {
+  height: 0.3rem;
+}
+
+.recent-folders::-webkit-scrollbar-thumb {
+  background-color: #f1f0ec;
+  border-radius: 24px;
+}
+
+.folder-top {
+  position: absolute;
+  width: 60px;
+  height: 17px;
+  position: relative;
+  background-color: var(--folderBackgroundColor);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.folder-top:before {
+  content: "";
+  position: absolute;
+  right: -34px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 40px solid var(--folderBackgroundColor);
+  border-top: 17px solid transparent;
+}
+
+.folder-body {
+  width: 170px;
+  height: 95px;
+  background-color: var(--folderBackgroundColor);
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 1rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.folder-header {
+  display: flex;
+  align-items: center;
+}
+
+.folder-title-icon {
+  width: 20px;
+  height: 20px;
+  background-color: #fd71af;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.folder-title-icon div {
+  width: 6px;
+  height: 6px;
+  background-color: var(--folderBackgroundColor);
+}
+
+.folder-title {
+  font-size: 11px;
+  color: var(--textBlackColor);
+  font-weight: 500;
+  margin-left: 8px;
+}
+
+.folder-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.folder-footer p {
+  font-size: 10px;
+  color: #545f71;
+}
+
+.folder-viewall-btn a {
+  color: #b17908;
+  text-decoration: underline !important;
+}
+
+/* End of project section */
+
+/******** project aside section *******/
+.project-section-aside {
+  background-color: var(--cardBackgroundColor);
+  width: 23%;
+  border-radius: 10px;
+  min-width: 220px;
+  padding: 1.5rem 1rem;
+}
+
+.project-section-aside-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aside-title {
+  display: flex;
+  align-items: center;
+}
+
+.aside-title p {
+  margin-left: 10px;
+  border-bottom: 1px solid var(--textlightDarkColor);
+  color: var(--textlightDarkColor);
+  font-size: 14px;
+}
+
+.add-task-icon {
+  padding: 4px 10px;
+  background-color: #efa51070;
+  border-radius: 5px;
+}
+
+.divider {
+  margin: 10px 0;
+}
+
+.upcoming-task-content {
+  background-color: var(--whiteColor);
+  padding: 10px 8px;
+  border-radius: 8px;
+  margin-bottom: 4px;
+}
+
+.upper-content {
+  display: flex;
+}
+
+.upper-content input[type="checkbox"] {
+  accent-color: var(--goldishYellowColor);
+  color: var(--whiteColor);
+}
+
+.upper-content p {
+  font-size: 11px;
+  margin-left: 5px;
+  text-decoration: none;
+  color: var(--blackColor);
+}
+
+.line-through {
+  text-decoration: line-through !important;
+  color: var(--greenishYellow) !important;
+}
+
+.down-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.content-category {
+  display: flex;
+}
+
+.content-category p {
+  padding: 4px 6px;
+  border-radius: 15px;
+}
+
+.uxdesign {
+  background-color: #ffc80030;
+  color: #ffc800;
+}
+
+.fintech {
+  background-color: #00b88420;
+  color: #00b884;
+}
+
+.landing {
+  background-color: #49ccf930;
+  color: #49ccf9;
+}
+
+.ux {
+  background-color: #fd71af20;
+  color: #fd71af;
+}
+
+.shopping {
+  background-color: #7b68ee30;
+  color: #7b68ee;
+}
+
+.setup {
+  background-color: #00b88420;
+  color: #00b884;
+}
+
+.m-left {
+  margin-left: 5px;
+}
+
+.down-content p {
+  font-size: 10px;
+}
+
+.down-content .date {
+  color: #555555;
+  text-align: end;
+}
+
+.aside-t-margin {
+  margin-top: 2rem;
+}
+
+.aside-title-icon {
+  background-color: #56555c50;
+  padding: 3px 7px;
+  border-radius: 4px;
+}
+
+.notes-content {
+  background-color: var(--whiteColor);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-header-date {
+  display: flex;
+  align-items: center;
+}
+
+.note-header p {
+  color: #a3a3a3;
+  font-size: 10px;
+  margin-left: 8px;
+}
+
+.note-title {
+  color: #4f4f4f;
+  font-size: 11px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.note-text {
+  color: #999999;
+  font-size: 10px;
+}
+
+/******** End of main aside section *******/

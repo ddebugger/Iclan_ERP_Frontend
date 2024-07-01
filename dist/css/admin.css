@@ -1,0 +1,400 @@
+@font-face {
+  font-family: 'DMSans';
+  src: url('../../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf') format('ttf-variations');
+  src: url('../../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf') format('truetype');
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DMSans';
+  font-weight: 1rem;
+}
+
+:root {
+  --textBlackColor: #0A0A0A;
+  --textLightGrayColor: #757575;
+  --textDarkBlueColor: #004F71;
+  --whiteColor: #FFFFFF;
+  --blackColor: #000000;
+  --redColor: #FF0000;
+  --textSidebarColor: #202020;
+  --backgroundColor: #F5F6FA;
+  --yellowColor: #FFCD05;
+  --textBlueColor: #102844;
+  --textLighterGrayColor: #767278;
+  --thinkerYellow: #F1AC21;
+  --thinkYellow: #FBBC28;
+  --dividerGrayColor: #E0E0E0;
+  --iconThumbnailBlueColor: #E9EDFF;
+  --iconThumbnailRedColor: #FFEFE0;
+  --iconThumbnailOrangeColor: #FFF6D8;
+  --iconRedColor: #FF7373;
+}
+
+.wrapper {
+  display: flex;
+}
+
+/******** Sidebar section ********/
+.aside {
+  width: 16%;
+  height: 100vh;
+  background-color: var(--whiteColor);
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0;
+}
+
+.logo {
+  width: 100px;
+  height: 50px;
+}
+
+.menu {
+  margin-top: 1rem;
+  list-style-type: none;
+}
+
+.menu li {
+  margin: 10px 0 ;
+}
+
+.menu li a {
+  display: flex !important;
+  text-decoration: none ;
+}
+
+.menu-item-indicator {
+  height: inherit ;
+  width: 4px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px ;
+}
+
+.menu-item {
+  display: flex ;
+  flex: 1 ;
+  padding: 12px 10px;
+  margin: 0 1rem ;
+  border-radius: 6px ;
+  align-items: center ;
+}
+
+.menu-item svg {
+  color: var(--textSidebarColor);
+  opacity: 0.6;
+}
+
+.active-menu svg {
+  color: var(--whiteColor);
+  opacity: 1;
+}
+
+.menu-item p {
+  color: var(--textSidebarColor);
+  margin-left: 10px;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.active-menu {
+  background-color: var(--thinkerYellow);
+}
+
+.active-menu p {
+  color: var(--whiteColor);
+  font-weight: bold;
+  opacity: 1;
+}
+
+.logout svg,
+.logout p {
+  color: #FF0000;
+}
+
+.divider {
+  width: 100%;
+  height: 0.01rem;
+  margin-top: 1.5rem;
+  background-color: var(--dividerGrayColor);
+}
+
+.subtitle {
+  color: var(--textSidebarColor);
+  font-size: 12px;
+  padding: 1rem 1.5rem 0 1.5rem;
+  font-weight: bold;
+  opacity: 0.6;
+}
+
+/******* End of side bar section *******/
+
+/******** Main section ********/
+.main {
+  width: 84%;
+  height: 100vh;
+  background-color: var(--backgroundColor);
+}
+
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 2rem 0.5rem 2rem;
+}
+
+#sidebar-active {
+  display: none;
+}
+
+.open-sidebar {
+  display: none;
+}
+
+.user-name {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--textBlackColor);
+}
+
+.greetings {
+  font-size: 12px;
+  color: var(--textLightGrayColor);
+  margin-top: 4px;
+}
+
+.role {
+  font-size: 12px;
+  color: var(--textBlackColor);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.vet-divider {
+  height: 100%;
+  width: 0.14rem;
+  margin: 0 1rem;
+  background-color: var(--dividerGrayColor);
+}
+
+.acount-info {
+  margin: 0 16px;
+}
+
+@media (max-width: 1000px) {
+  .aside {
+    display: none;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .open-sidebar {
+    display: block;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .acount-info,
+  .vet-divider,
+  .notification-icon {
+    display: none;
+  }
+}
+
+/* End of header */
+
+/* title section */
+.title-section {
+  margin: 0 2rem;
+  padding: 0.5rem 0;
+}
+
+.title {
+  color: var(--textDarkBlueColor);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* End of title section */
+
+/******** Main content section  *******/
+.main-section-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 2rem;
+}
+
+.main-section {
+  width: 76%;
+  height: 100vh;
+}
+
+.counters {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 0.5rem;
+  overflow-x: scroll;
+}
+
+.counters:last-child() {
+  margin-right: 0px;
+}
+
+.counter-item {
+  background-color: var(--whiteColor);
+  padding: 1.5rem 1.5rem;
+  border-radius: 15px;
+  width: 190px;
+  min-width: 190px;
+}
+
+.counter-main-content {
+  display: flex;
+}
+
+.main-counter-text {
+  font-size: 20px;
+  color: var(--textBlueColor);
+  font-weight: bold;
+}
+
+.sub-counter-text {
+  font-size: 10px;
+  color: var(--textLighterGrayColor);
+}
+
+.counter-icon {
+  width: 38px;
+  height: 38px;
+  background-color: var(--textBlueColor);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter-texts {
+  margin-left: 0.5rem;
+}
+
+.counter-progress-bar {
+  display: flex;
+  margin-top: 15px;
+}
+
+.back-progress-bar {
+  width: 100%;
+  height: 4px;
+  background-color: var(--dividerGrayColor);
+  border-radius: 10px;
+}
+
+.progress-bar {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.front-progress-bar {
+  width: 70%;
+  height: 4px;
+  background-color: var(--textDarkBlueColor);
+  border-radius: 10px;
+  position: absolute;
+  top: 50;
+  left: 0;
+}
+
+.percentage {
+  color: var(--textDarkBlueColor);
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/******** main aside section *******/
+.main-section-aside {
+  background-color: var(--whiteColor);
+  width: 22%;
+  height: 100vh;
+  border-radius: 10px;
+  min-width: 220px;
+}
+
+.main-section-aside-title {
+  color: var(--textBlueColor);
+  margin: 1rem;
+  font-weight: 500;
+}
+
+.task-item {
+  display: flex;
+  margin: 1.5rem 1rem;
+  align-items: center;
+}
+
+.task-item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 12px;
+  border-radius: 8px;
+}
+
+.task-item-texts {
+  margin-left: 0.8rem;
+}
+
+.task-item-text-title {
+  font-size: 14px;
+  color: var(--textBlueColor);
+}
+
+.task-item-text-time {
+  font-size: 12px;
+  color: var(--textLighterGrayColor);
+  margin-top: 2px;
+}
+
+.ML-color {
+  background-color: var(--iconThumbnailBlueColor);
+}
+
+.ML-color svg,
+.DS-color Svg,
+.TDT-color {
+  color: var(--thinkerYellow);
+}
+
+.DS-color {
+  background-color: var(--iconThumbnailRedColor);
+}
+
+.TDT-color {
+  background-color: var(--iconThumbnailOrangeColor);
+}
+
+.T2P-color {
+  background-color: var(--iconThumbnailRedColor);
+}
+
+.T2P-color svg {
+  color: var(--iconRedColor);
+}
+
+/******** End of main aside section *******/

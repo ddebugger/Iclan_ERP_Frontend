@@ -1,0 +1,180 @@
+@font-face {
+  font-family: "DMSans";
+  src: url("../../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf")
+    format("ttf-variations");
+  src: url("../../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf")
+    format("truetype");
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DMSans";
+}
+
+.logo-details {
+  height: 60px;
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.logo-details .icon {
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.logo-details .logo_name {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 800;
+  opacity: 0;
+}
+
+.logo-details .logo_name .logo_name_part {
+  font-weight: 200;
+}
+
+.logo-details .icon,
+.logo-details .logo_name {
+  opacity: 1;
+}
+
+.section {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 32%;
+  padding: 1rem;
+}
+
+.section h1 {
+  font-weight: 600;
+  font-size: 23px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.section p {
+  font-weight: 500;
+  font-size: 13px;
+  margin-bottom: 2rem;
+  line-height: 160%;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.form-group {
+  position: relative;
+  height: 2rem;
+  margin-bottom: 1.5rem;
+  height: 100%;
+}
+
+.form-group .input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+  padding: 10px;
+  border-radius: 0.2rem;
+}
+
+.form-group .input-label {
+  position: absolute;
+  left: 1rem;
+  top: 0.9rem;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #fff;
+  transition-property: top;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input:focus ~ .input-label,
+.input:not(:placeholder-shown).input:not(:focus) ~ .input-label {
+  top: -0.5rem;
+  left: 0.8rem;
+  font-size: 0.85rem;
+}
+
+.btn-div p {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.btn-div a {
+  text-decoration: none;
+}
+
+.back-btn {
+  width: 100%;
+  padding: 8px;
+  background-color: black;
+  border-radius: 0.2rem;
+  text-align: center;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px rgba(0, 0, 0, 0.14), 0px 1px 5px rgba(0, 0, 0, 0.12);
+}
+
+.login .login-btn {
+  color: white;
+  font-size: 15px;
+  padding: 8px 22px;
+  background: #004f71;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px rgba(0, 0, 0, 0.14), 0px 1px 5px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 4.5rem;
+  border: none;
+  font-weight: bold;
+}
+
+/* This needs to be adjusted to center properly */
+.sticky-footer {
+  gap: 1rem;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  margin: 0 auto;
+}
+
+.sticky-footer p {
+  margin-right: 30rem;
+  margin: auto !important;
+  font-size: 10px;
+}
+
+.empty {
+  height: 5px;
+  width: 5px;
+  background-color: rgba(0, 0, 0, 0.87);
+  border-radius: 4px;
+  margin: auto;
+}
+
+@media screen and (max-width: 980px) {
+  .logo img {
+    height: 60px;
+    width: 140px;
+    margin-bottom: 3rem;
+  }
+
+  .section {
+    padding: 1.5rem;
+    width: 100%;
+  }
+}

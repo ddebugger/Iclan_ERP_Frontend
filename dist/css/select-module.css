@@ -1,0 +1,393 @@
+/* Select Module Page Styles Here */
+
+/* *********Font face declaration ***********/
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf")
+    format("ttf-variations");
+  src: url("../../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("../../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf")
+    format("ttf-variations");
+  src: url("../../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf")
+    format("truetype");
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("../../assets/fonts/Nunito/Nunito-VariableFont_wght.ttf")
+    format("ttf-variations");
+  src: url("../../assets/fonts/Nunito/Nunito-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+}
+
+/* *********  Color Variables Declarations ***********/
+:root {
+  --activeBackground: #f1ac21;
+  --activeText: #004f71;
+  --textColor: #252525;
+  --greyText: #757575;
+  --whiteBackground: #ffffff;
+}
+
+/* *********  Main Styles Starts Here  ***********/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Montserrat'; */
+  font-weight: 1rem;
+}
+
+/* Page Background styles */
+.wrapper {
+  min-height: 100vh;
+  /* width: 98.5vw; */
+  background-image: url("../../assets/images/select-module-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1rem 9rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Inner-section styles*/
+.inner-section {
+  width: 100%;
+}
+
+/************* Navbar Styles ***********/
+nav {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.51);
+  /* background-color: #ffffffb7; */
+  font-family: "DMSans";
+}
+
+.admin-user {
+  font-size: 20px;
+}
+
+.greetings {
+  color: var(--greyText);
+  font-size: 14px;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.notification-cover {
+  padding-right: 1rem;
+  border-right: 1.5px solid #c2c2c2;
+}
+
+.admin-profile {
+  display: flex;
+  max-height: 48px;
+  align-items: center;
+  gap: 8px;
+}
+
+.admin-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.admin-status img {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}
+
+.admin-content b {
+  font-size: 16px;
+  color: var(--textColor);
+  font-weight: 500;
+}
+
+.admin-content span {
+  font-size: 12px;
+  color: var(--textColor);
+}
+
+/* Navbar Dropdown Styles ******** */
+.dropdown-group {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s;
+  background-color: white;
+  padding: 10px;
+  z-index: 1000 !important;
+  width: 120px;
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: -4rem;
+  list-style: none !important;
+  justify-content: center !important;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  color: var(--activeBackground);
+}
+
+.dropdown-group:hover .dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.navbar-logout {
+  color: red;
+}
+
+/* End of Nav Bar Desktop ****************************/
+
+/* Media Queries for Cover and NavBar */
+@media (max-width: 1000px) {
+  .wrapper {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .notification-cover {
+    display: none;
+  }
+
+  .admin-content {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .notification-cover {
+    display: none;
+  }
+
+  .admin-content {
+    display: none;
+  }
+}
+
+/* End Of Media Queries for NavBar *********************/
+
+/* Main content styles */
+.main-content {
+  width: 100%;
+  border-radius: 41px;
+  font-family: "Montserrat";
+  padding: 4rem 2rem;
+  height: auto;
+  margin-top: 5rem;
+  background: rgba(245, 246, 250, 0.57);
+  backdrop-filter: blur(2px);
+}
+
+.main-content h1 {
+  display: flex;
+  justify-content: center;
+  color: var(--activeText);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: "Nunito";
+  font-size: 50px;
+  font-weight: 400;
+}
+
+/* *************  Module Row Boxes ***************/
+.modules-row {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 7rem;
+  gap: 30px;
+  padding: 1rem;
+}
+
+.modules-row a {
+  text-decoration: none;
+}
+/************** End of Module Row Boxes ***************/
+
+/* **************Module Box ***************/
+.module-box {
+  max-height: 200px;
+  width: 240px;
+  border-radius: 31px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  background-color: var(--whiteBackground);
+}
+
+.module-box.long-title {
+  gap: 16px !important;
+}
+
+.module-box.longer-title {
+  gap: 16px !important;
+}
+
+.module-box .svg-content {
+  display: flex;
+  justify-content: end;
+}
+
+.module-box.active .module-title {
+  color: var(--activeText);
+  font-weight: 600 !important;
+  font-size: 20px;
+}
+
+.module-box .module-title {
+  color: var(--textColor);
+  font-weight: 400 !important;
+  font-size: 20px;
+  text-wrap: nowrap;
+}
+
+.module-box:hover {
+  background-color: var(--activeBackground);
+  transition: ease-out 500ms;
+}
+
+.module-box:hover .module-title {
+  color: var(--activeText);
+  font-weight: 600 !important;
+}
+
+.module-box:hover .svg-content path {
+  fill: white !important;
+}
+
+.module-box.active {
+  background-color: var(--activeBackground);
+}
+
+/************** End of Module Box***************/
+
+/* Media Queries for Main Content */
+@media (max-width: 1080px) {
+  .wrapper {
+    margin: 0;
+    width: auto;
+    min-height: 100vh;
+    padding: 1rem 3rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-content {
+    padding: 6rem 6.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .main-content h1 {
+    position: absolute;
+    top: 3.4rem !important;
+    font-size: 40px;
+  }
+
+  .modules-row {
+    margin: 1rem;
+    max-width: 600px;
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+
+  .wrapper {
+    padding-bottom: 0.3rem;
+    margin: 0;
+    height: auto;
+    width: auto;
+  }
+}
+
+@media (max-width: 1010px) {
+  .main-content {
+    padding: 10rem 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .main-content h1 {
+    position: absolute;
+    top: 4rem !important;
+    font-size: 42px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 560px) {
+  .wrapper {
+    margin: 0 !important;
+    width: auto !important;
+    height: auto !important;
+  }
+
+  .modules-row {
+    display: block !important;
+    justify-content: center !important;
+    margin: 0rem 2rem !important;
+    gap: 30px !important;
+  }
+
+  .main-content {
+    display: block !important;
+    padding: 1rem 0.5rem !important;
+    justify-content: center !important;
+  }
+
+  .main-content h1 {
+    font-size: 30px !important;
+    margin-bottom: 0.5rem !important;
+    margin-top: 1.8rem !important;
+    position: inherit !important;
+  }
+
+  .module-box {
+    margin: 30px auto !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .modules-row {
+    margin-left: 0.6rem !important;
+  }
+}

@@ -1,0 +1,623 @@
+/* Google Font Link */
+@font-face {
+  font-family: "DMSans";
+  src: url("../../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf")
+    format("ttf-variations");
+  src: url("../../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf")
+    format("truetype");
+  font-weight: 100 1000;
+  font-stretch: 25% 151%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DMSans";
+}
+
+:root {
+  --textBlackColor: #060606;
+  --textLightGrayColor: #757575;
+  --textDarkBlueColor: #004f71;
+  --whiteColor: #ffffff;
+  --blackColor: #000000;
+  --redColor: #ff0000;
+  --textSidebarColor: #5a5a5a;
+  --backgroundColor: #e3e0d9;
+  --yellowColor: #ffcd05;
+  --textBlueColor: #102844;
+  --textLighterGrayColor: #767278;
+  --thinkerYellow: #f1ac21;
+  --thinkYellow: #fbbc28;
+  --dividerGrayColor: #e0e0e0;
+  --iconThumbnailBlueColor: #e9edff;
+  --iconThumbnailRedColor: #ffefe0;
+  --iconThumbnailOrangeColor: #fff6d8;
+  --iconRedColor: #ff7373;
+  --lightPink: #e89271;
+  --lightPuple: #d398e7;
+  --lightBlue: #70a1e5;
+  --lightYellow: #f0c274;
+  --cardTitleGray: #797979;
+  --cardBackgroundColor: rgba(255, 255, 255, 0.51);
+  --statusGreenColor: #1a932e;
+  --statusYellowColor: #dfa510;
+  --statusRedColor: #;
+  --statusOrangeColor: #e65f2b;
+}
+
+/* Home section */
+.home-section {
+  position: relative;
+  background: var(--backgroundColor);
+  min-height: 100vh;
+  top: 0;
+  left: 78px;
+  width: calc(100% - 78px);
+  transition: all 0.5s ease;
+  padding: 1rem 2rem;
+}
+
+.sidebar.open ~ .home-section {
+  left: 250px;
+  width: calc(100% - 250px);
+}
+
+.home-section .text {
+  display: inline-block;
+  color: #11101d;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 18px;
+}
+
+@media (max-width: 560px) {
+  .sidebar.open ~ .home-section {
+    left: 78px;
+    width: calc(100% - 78px);
+  }
+}
+
+/* ------------------------links section -------------------------- */
+.link-section {
+  margin: 0.5rem 0rem 0rem 0rem;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link-section-back-btn img {
+  background-color: #eef1f4;
+  padding: 6px;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.link-section .links {
+  display: flex;
+  list-style: none;
+  gap: 0.3rem;
+}
+
+.link-section .links .link-item a {
+  color: var(--textBlackColor);
+  font-family: "Montserrat";
+  font-size: 15px;
+}
+
+.link-section .links .active-link a {
+  color: var(--thinkerYellow);
+  text-decoration: none;
+}
+
+/* ------------------------------- main section -------------------- */
+.main {
+  margin: 0.5rem 0rem 0rem 0rem;
+  background-color: var(--cardBackgroundColor);
+  border-radius: 10px;
+  padding: 1rem 1.5rem 0 1.5rem;
+  max-width: 100%;
+}
+
+.main-bg {
+  background-image: url(../../assets/images/Rectangle.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  max-width: 100%;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+
+.main-bg-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 1rem 0rem 1.5rem;
+  padding-top: 7.5rem;
+  max-width: 100%;
+  height: 100%;
+  /* border: 2px solid red; */
+  flex-wrap: wrap;
+}
+
+.main-bg-content__left {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.main-bg-content__left img {
+  width: 45px;
+  height: 45px;
+}
+
+.main-bg-content__left h3 {
+  color: var(--whiteColor);
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 25px;
+  font-family: "Plus Jakarta Sans";
+}
+
+.main-bg-content__left span {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.72);
+  font-family: "Plus Jakarta Sans";
+}
+
+.main-bg-content__right {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.main-bg-content__right h5 {
+  font-family: "Plus Jakarta Sans";
+  font-style: bold;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.main-bg-content__right span {
+  color: var(--whiteColor);
+  font-family: "Plus Jakarta Sans";
+  font-style: bold;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.main-bg-content__right .icons img {
+  background-color: var(--whiteColor);
+  padding: 6px;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  border-radius: 19px;
+  margin-right: 7px;
+}
+
+/* ---main section cta--- */
+.main-cta {
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 2rem 0rem 1rem;
+}
+
+.main-cta .tabs {
+  display: flex;
+  gap: 1rem;
+}
+
+.main-cta .tabs .tabs-item {
+  list-style: none;
+}
+
+.main-cta .tabs .active-item {
+  border-bottom: 2px solid var(--thinkYellow);
+}
+
+.main-cta .tabs a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: 300;
+  line-height: 15px;
+  font-family: "Montserrat"; /* subtext/500 */
+  color: #333333;
+}
+
+.main-cta .tabs .tabs-item .item_name {
+  font-size: 20px;
+}
+
+.main-cta .tabs .active-item a span {
+  color: var(--thinkYellow);
+}
+
+.main-cta .tabs a:hover {
+  color: var(--thinkYellow);
+}
+
+.main-cta .tabs .tabs-item:hover {
+  border-bottom: 2px solid var(--thinkYellow);
+}
+
+/* ------- responsiveness for the main section ---------  */
+
+/* Styles for tablets */
+@media screen and (max-width: 960px) {
+  .main {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main-bg-content {
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 4rem;
+    height: auto;
+    gap: 1rem;
+  }
+
+  .main-bg-content__left img {
+    width: 37px;
+    height: 37px;
+  }
+
+  .main-bg-content__right {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+  }
+}
+
+/* Styles for mobile devices */
+@media screen and (max-width: 715px) {
+  .main-bg-content {
+    gap: 0.8rem;
+    top: 5rem;
+  }
+
+  .main-bg-content__left img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .main-bg-content__left h3 {
+    font-size: 18px;
+    line-height: 11px;
+  }
+
+  .main-bg-content__left span {
+    font-size: 10px;
+  }
+
+  .main-bg-content__right h5 {
+    font-size: 12px;
+  }
+}
+
+/* -------------------------- board section -------------------- */
+
+.board-section {
+  margin: 3rem 0rem 1rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.board-section-header {
+  background-color: var(--cardBackgroundColor);
+  border-radius: 10px;
+  padding: 17px 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.board-section-header .header-left,
+.header-right {
+  display: flex;
+  gap: 2rem;
+}
+
+.board-section-header .header-element-name {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  background-color: var(--blackColor);
+  border-radius: 17px;
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  cursor: pointer;
+}
+
+.board-section-header .header-element-name img {
+  height: 17px;
+  width: 17px;
+  margin: auto;
+}
+
+.board-section-header .header-element-name h2 {
+  color: var(--whiteColor);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 14px;
+  text-align: center;
+  margin: auto;
+  font-family: "Montserrat";
+}
+
+.board-section-header .header-element-list {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.board-section-header .header-element-list img {
+  height: 17px;
+  width: 17px;
+  margin: auto;
+}
+
+.board-section-header .header-element-list h2 {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 14px;
+  text-align: center;
+  margin: auto;
+  font-family: "Montserrat";
+  color: #333333;
+}
+
+.board-section-header .header-element-add {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  background-color: var(--thinkYellow);
+  border-radius: 17px;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  cursor: pointer;
+}
+
+.board-section-header .header-element-add img {
+  height: 17px;
+  width: 17px;
+  margin: auto;
+}
+
+.board-section-header .header-element-add h2 {
+  color: var(--whiteColor);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 14px;
+  text-align: center;
+  margin: auto;
+  font-family: "Montserrat";
+}
+
+.board-section-header .header-element-filter {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  background-color: var(--whiteColor);
+  border-radius: 17px;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  cursor: pointer;
+}
+
+.board-section-header .header-element-filter img {
+  height: 17px;
+  width: 17px;
+  margin: auto;
+}
+
+.board-section-header .header-element-filter h2 {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 14px;
+  text-align: center;
+  margin: auto;
+  font-family: "Montserrat";
+}
+
+.board-section-content {
+  max-width: 100%;
+  overflow-x: scroll;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) !important;
+  grid-gap: 10px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  /* border: 2px solid red; */
+}
+
+.board-section-content::-webkit-scrollbar {
+  display: none;
+}
+
+.board-section-content .board {
+  padding: 0.8rem 0.8rem 0rem 0.8rem;
+  border-radius: 15px;
+  height: auto;
+  background: #f1f0ec;
+  max-width: 100%;
+  /* max-width: 30rem !important; */
+}
+
+.board .board-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+}
+
+.board .board-header-text {
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.board .board-header-text img {
+  height: 9px;
+  width: 9px;
+}
+
+.board .board-header-text h2 {
+  font-size: 13px;
+  font-family: "Montserrat";
+  line-height: 12px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.board .board-header-text .counter {
+  font-size: 12px;
+  background-color: var(--whiteColor);
+  padding: 3px;
+  border-radius: 25px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.board .board-header .add-icon img {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: var(--whiteColor);
+  padding: 3px;
+  cursor: pointer;
+  border-radius: 19px;
+}
+
+.board .board-divider {
+  border-bottom: 1px solid var(--dividerGrayColor);
+  margin-bottom: 1rem;
+}
+
+.board-element {
+  padding: 0.8rem 0.8rem 0rem 0.8rem;
+  border-radius: 15px;
+  background: var(--whiteColor);
+  margin-bottom: 1rem;
+  cursor: pointer;
+  max-width: 100%;
+}
+
+.board-element-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.board-element .board-element-header-title h1 {
+  font-size: 11px;
+  font-weight: 400;
+  margin: auto;
+  background-color: #deedff;
+  padding: 7px;
+  border-radius: 19px;
+  font-family: "Montserrat";
+  color: #111111;
+}
+
+.board-element .board-element-header-title {
+  display: flex;
+  gap: 1rem;
+  font-family: "Montserrat";
+  color: #111111;
+  font-weight: 500;
+}
+
+.board-element .board-element-header-title .yellow {
+  background-color: #fff8ea !important;
+}
+
+.board-element .board-element-header-title .purple {
+  background-color: #e9e0f5 !important;
+}
+
+.board-element .board-element-header-title .pink {
+  background-color: #ffeaf8 !important;
+}
+
+.board-element-header img {
+  margin: auto;
+  height: 40px;
+  width: 40px;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.board-element-title {
+  font-size: 12px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  line-height: 23px;
+}
+
+.board-element .board-img img {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.board-element-footer {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: red; */
+  padding: 10px;
+}
+
+.board-element-footer-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.board-element-footer-icons-div {
+  margin: auto;
+}
+
+.board-element-footer-text {
+  display: flex;
+  gap: 0.1rem;
+  /* background-color: blue; */
+}
+
+.board-element-footer-text h3 {
+  font-size: 11px;
+  font-family: sans-serif;
+  width: 70px;
+  font-weight: 100;
+  color: var(--textLighterGrayColor);
+  /* border: 2px solid red; */
+}
+
+.board-section-content,
+.discussion-section-content,
+.timeline-section-content,
+.files-section-content,
+.overview-section-content {
+  display: none;
+}
+
+/* ----------------- Responsiveness for the board section-------------- */
+
+@media screen and (max-width: 715px) {
+  .board-section-header .header-element-filter,
+  .board-section-header .header-element-name {
+    display: none;
+  }
+}
