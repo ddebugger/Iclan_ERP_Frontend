@@ -93,3 +93,6 @@ for (boardElement of boardElements) {
     });
   });
 }
+
+
+// Styles for the calendar in the timeline section
