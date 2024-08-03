@@ -3,6 +3,10 @@ const openModalButton = document.getElementById("project-modal-btn");
 const closeModalButton = document.getElementById("close-modal");
 // const projectModalContent = document.getElementById("project-modal-content");
 const modal = document.getElementById("project-modal")
+const addParticipantBtn = document.getElementById("add-participant-btn")
+const addParticipantModal = document.getElementById("add-participants-modal")
+
+
 
 openModalButton.addEventListener("click", () => {
   modal.style.display = "block"
@@ -18,6 +22,15 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
     modal.style.display = "none";
   }
+});
+
+// Add Participants Modal
+addParticipantBtn.addEventListener("click", () => {
+  addParticipantModal.style.display = "block"
+});
+
+addParticipantBtn.addEventListener("dblclick", () => {
+  addParticipantModal.style.display = "none"
 });
 
 
