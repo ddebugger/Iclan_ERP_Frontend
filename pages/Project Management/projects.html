@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../../dist/css/dashboard.css" />
     <link rel="stylesheet" href="../../dist/css/select-module.css" />
     <link rel="stylesheet" href="../../dist/css/projects.css" />
+    <link rel="stylesheet" href="../..//dist/css/new_folder_modal.css">
+    <!-- <link rel="stylesheet" href="../../dist/css/modal.css"> -->
 
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
@@ -80,7 +82,7 @@
                   fill="currentColor"
                 />
               </svg>
-              <span class="links_name active-menu">projects</span>
+              <span class="links_name active-menu">Projects</span>
             </div>
           </a>
         </li>
@@ -382,7 +384,7 @@
                 <input type="text" placeholder="Search" />
               </div>
               <div class="project-header-line"></div>
-              <div class="project-header-add-icon" id="open-modal">
+              <div class="project-header-add-icon" id="project-modal-btn">
                 <svg
                   width="13"
                   height="12"
@@ -1181,7 +1183,7 @@
                 <input type="text" placeholder="Search" />
               </div>
               <div class="project-header-line"></div>
-              <div class="project-header-add-icon">
+              <div class="project-header-add-icon" id="add-new-folder">
                 <svg
                   width="13"
                   height="12"
@@ -1861,9 +1863,11 @@
       </section>
     </section>
 
-    <div id="modal" class="modal">
+    
+    <!----------- Add New Project Modal -------->
+    <div id="project-modal" class="modal">
       <!-- modal content -->
-      <div class="modal-content">
+      <div class="modal-content" id="project-modal-content">
         <!-- modal header -->
         <div class="modal-content-header">
           <div class="header">
@@ -1878,7 +1882,7 @@
         <div class="d-line"></div>
 
         <!-- content info -->
-        <div class="project-info">
+        <div class="project-infos">
           <!-- left section of project info -->
           <div class="left">
             <!-- form -->
@@ -2053,7 +2057,7 @@
                     stroke-linejoin="round"
                   />
                 </svg>
-                <p>Cancel</p>
+                <p id="close-project-modal">Cancel</p>
               </a>
               <a href="">
                 <svg
@@ -2080,6 +2084,56 @@
 
         <button id="close-modal">Close</button>
       </div>
+    </div>
+
+
+    <!-- New Folder Modal -->
+    <!-- Overlay Here -->
+    <div class="modal-bg" id="overlay"></div>
+    <div class="new-folder-modal" id="folder-modal">
+      <div class="folder-modal-content" id="folder-modal-content">
+        <div class="modal-top">
+          <div class="modal-top-content">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M6.43314 0.600525C7.16619 0.601296 7.86455 0.951249 8.30238 1.5363L9.0046 2.47054C9.22736 2.76653 9.58117 2.94305 9.95117 2.94382H12.1318C15.1087 2.94382 16.4954 4.46928 16.4954 7.7445L16.4739 11.5732C16.4731 14.6318 14.5722 16.5326 11.5121 16.5326H5.51355C2.44722 16.5326 0.541748 14.631 0.541748 11.5709V5.55922C0.541748 2.26858 2.00554 0.600525 4.89149 0.600525H6.43314ZM6.43237 1.75676H4.89149C2.65303 1.75676 1.69798 2.89449 1.69798 5.55922V11.5709C1.69798 14.0252 3.05308 15.3764 5.51355 15.3764H11.5121C13.9664 15.3764 15.3176 14.0252 15.3176 11.5709V11.5685L15.3392 7.74142C15.3392 5.12139 14.4404 4.10005 12.1318 4.10005H9.95039C9.21889 4.09928 8.52052 3.7501 8.08115 3.16582L7.37739 2.23004C7.15617 1.93328 6.80236 1.75753 6.43237 1.75676ZM11.8853 10.0144C12.2044 10.0144 12.4634 10.2734 12.4634 10.5925C12.4634 10.9117 12.2044 11.1706 11.8853 11.1706H5.15219C4.83307 11.1706 4.57407 10.9117 4.57407 10.5925C4.57407 10.2734 4.83307 10.0144 5.15219 10.0144H11.8853Z"
+                fill="#56555C" />
+            </svg>
+            <b>New Folder</b>
+            <div class="modal-line"></div>
+          </div>
+        </div>
+
+        <!-- Folder Name Input name area -->
+        <div class="folder-wrapper">
+          Folder Name
+          <div class="input-wrapper">
+            <input type="text" placeholder="Untitled Folder">
+          </div>
+        </div>
+
+        <div class="buttons-section">
+          <!-- buttons -->
+          <div class="button-div">
+            <a href="">
+              <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.54504 14.8963L15.2631 5.17822M5.54504 5.17822L15.2631 14.8963" stroke="#EFA510" stroke-width="2.11423"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p id="close-folder-modal">Cancel</p>
+            </a>
+
+            <a href="" class="create-folder">
+              <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.4276 5.31917V7.03698M7.4276 7.03698V8.75479M7.4276 7.03698H9.14541M7.4276 7.03698H5.70979M12.581 7.03698C12.581 9.88314 10.2738 12.1904 7.4276 12.1904C4.58144 12.1904 2.27417 9.88314 2.27417 7.03698C2.27417 4.19081 4.58144 1.88354 7.4276 1.88354C10.2738 1.88354 12.581 4.19081 12.581 7.03698Z"
+                  stroke="white" stroke-width="1.61967" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p>Create Folder</p>
+            </a>
+          </div>
+          </div>
+        </div>
     </div>
 
     <script src="../../dist/js/dasboard.js"></script>

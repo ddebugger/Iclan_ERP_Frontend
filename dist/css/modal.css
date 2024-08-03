@@ -347,7 +347,6 @@
   font-weight: 500;
   font-size: 12px;
   text-align: center;
-
   color: #6d6d6d;
 }
 
@@ -384,8 +383,8 @@
   width: 20px;
 }
 
-.right .button-div p {
-}
+/* .right .button-div p {
+} */
 
 /* .right .button-div button {
   border: 1.61967px solid #efa510;
