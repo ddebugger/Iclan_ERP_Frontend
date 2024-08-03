@@ -1902,11 +1902,20 @@
             <div class="assigned-to">
               <p>Assigned to</p>
               <img src="../../assets/images/Avatars.svg" alt="avatar" />
-              <img src="../../assets/images/Frame 56.svg" alt="frame" />
+              <img src="../../assets/images/Frame 56.svg" alt="frame" id="add-participant-btn" />
             </div>
 
+            <!-- ---- Add Participants Overlay ----->
+            <div id="add-participants-modal">
+              <div class="top-modal">
+                <img src="../../assets/icons/user-group.svg" alt="">
+                <b>Add Participants</b>
+              </div>
+            </div>
+
+
             <div class="tags-section">
-              <p style="margin-right: 4rem">Tags</p>
+              <p style="margin-right: 2rem">Tags</p>
               <div class="tags">
                 <!-- one tag -->
                 <div class="tag">
@@ -2041,7 +2050,7 @@
 
             <!-- buttons -->
             <div class="button-div">
-              <a href="">
+              <a href="" class="cancel-btn">
                 <svg
                   width="21"
                   height="20"
@@ -2059,7 +2068,7 @@
                 </svg>
                 <p id="close-project-modal">Cancel</p>
               </a>
-              <a href="">
+              <a href="" class="create-folder">
                 <svg
                   width="15"
                   height="14"
